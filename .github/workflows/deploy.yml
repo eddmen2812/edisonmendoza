@@ -31,8 +31,8 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     steps:
-      - name: tokenporfolio
+      - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.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 }}
+          github_token: ${{ secrets.tokenporfolio }}
           publish_dir: ./dist
