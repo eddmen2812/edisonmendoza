@@ -6,7 +6,7 @@
 
 ##  Descripción
 
-Contiene todo lo necesario para presentarlo en un trabajo
+Contiene todo lo necesario para presentarlo en un trabajo.
 
 ## 📝 Licencia MIT
 
