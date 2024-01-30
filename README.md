@@ -1,3 +1,34 @@
+<div align="center">
+  <h1> 🖇️ Portafolio</h1>
+  <a href="https://edisonmendoza.com/" target="_blank">Ver Portafolio</a>
+  <br/><br/>
+</div>
+
+##  Descripción
+
+Contiene todo lo necesario para presentarlo en un trabajo
+
+## 📝 Licencia MIT
+
+Este proyecto tiene Licencia [MIT](./LICENSE). 😉
+Puedes hacer lo siguiente sin restricciones significativas:
+
+* **Uso:** Puedes usar el software con cualquier propósito, ya sea personal, comercial, académico, etc.
+
+* **Modificación:** Tienes el derecho de modificar el software según tus necesidades.
+
+* **Distribución:** Puedes distribuir copias del software, ya sea en su forma original o modificado.
+
+* **Sublicencia y Venta:** Puedes sublicenciar el software y/o vender copias del mismo.
+
+### Modo Obscuro
+![](/public/images/porf_obscuro.png)
+
+### Modo Claro
+![](/public/images/porf_claro.png)
+
+
+---
 # Astro Starter Kit: Minimal
 
 ```sh
