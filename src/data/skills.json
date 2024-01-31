@@ -2,100 +2,100 @@
   "cardsBlueTeam": [
     {
       "name": "Cyber Threat Intelligence",
-      "imagePath": "public/images/cti.png",
+      "imagePath": "images/cti.png",
       "alt": "cti",
       "link":""
     },
     {
       "name": "Open Vas",
-      "imagePath": "public/images/openVas.png",
+      "imagePath": "images/openVas.png",
       "alt": "openVas",
       "link":"https://www.openvas.org/"
     },
     {
       "name": "Wazuh",
-      "imagePath": "public/images/wazuh.png",
+      "imagePath": "images/wazuh.png",
       "alt": "wazuh",
       "link":"https://wazuh.com/"
     },
     {
       "name": "Splunk",
-      "imagePath": "public/images/splunk.png",
+      "imagePath": "images/splunk.png",
       "alt": "splunk",
       "link":"https://www.splunk.com/"
     },
     {
       "name": "Azure",
-      "imagePath": "public/images/azure.png",
+      "imagePath": "images/azure.png",
       "alt": "azure",
       "link":"https://azure.microsoft.com/en-us"
     },
     {
       "name": "OPNsense",
-      "imagePath": "public/images/opnsense1.png",
+      "imagePath": "images/opnsense1.png",
       "alt": "opnsense1",
       "link":"https://opnsense.org/"
     },
     {
       "name": "PFsense",
-      "imagePath": "public/images/pfSense2.png",
+      "imagePath": "images/pfSense2.png",
       "alt": "pfSense2",
       "link":"https://www.pfsense.org/"
     },
 
     {
       "name": "Fortinet",
-      "imagePath": "public/images/fortinet.png",
+      "imagePath": "images/fortinet.png",
       "alt": "fortinet",
-      "link":"https://www.fortinet.com/training-certification"
+      "link":"https://www.hackthebox.com/https://www.fortinet.com/training-certification"
     }
   ],
   "cardsRedTeam": [
     {
       "name": "Kali Purple",
-      "imagePath": "public/images/kali-purple.png",
+      "imagePath": "images/kali-purple.png",
       "alt": "kali-purple",
       "link":"https://www.kali.org/blog/kali-linux-2023-1-release/"
     },
     {
       "name": "Air Crack-ng",
-      "imagePath": "public/images/aircrack-ng.png",
+      "imagePath": "images/aircrack-ng.png",
       "alt": "aircrack-ng",
       "link":"https://www.aircrack-ng.org/"
     },
     {
       "name": "Nmap",
-      "imagePath": "public/images/nmap.png",
+      "imagePath": "images/nmap.png",
       "alt": "nmap",
       "link":"https://nmap.org/"
     },
     {
       "name": "Burp Suite",
-      "imagePath": "public/images/burpSuite.png",
+      "imagePath": "images/burpSuite.png",
       "alt": "burpSuite",
       "link":"https://portswigger.net/burp"
     },
     {
       "name": "Metasploit",
-      "imagePath": "public/images/metasploit.png",
+      "imagePath": "images/metasploit.png",
       "alt": "metasploit",
       "link":"https://www.metasploit.com/"
     },
     {
       "name": "Shodan",
-      "imagePath": "public/images/shodan.png",
+      "imagePath": "images/shodan.png",
       "alt": "shodan",
       "link":"https://www.shodan.io/"
     },
     {
       "name": "OSINT",
-      "imagePath": "public/images/osint.png",
+      "imagePath": "images/osint.png",
       "alt": "osint",
       "link":""
     },
     {
       "name": "Maltego",
-      "imagePath": "public/images/maltego.png",
+      "imagePath": "images/maltego.png",
       "alt": "maltego",
       "link":"https://www.maltego.com/"
     }
@@ -103,31 +103,31 @@
   "cardsDataOthers": [
     {
       "name": "Git",
-      "imagePath": "public/images/git2.png",
+      "imagePath": "images/git2.png",
       "alt": "git2",
       "link":"https://git-scm.com/"
     },
     {
       "name": "Python",
-      "imagePath": "public/images/python.png",
+      "imagePath": "images/python.png",
       "alt": "python",
       "link":"https://www.python.org/"
     },
     {
       "name": "Astro",
-      "imagePath": "public/images/astro2.png",
+      "imagePath": "images/astro2.png",
       "alt": "astro2",
       "link":"https://astro.build/"
     },
     {
       "name": "Tailwind",
-      "imagePath": "public/images/tailwind.png",
+      "imagePath": "images/tailwind.png",
       "alt": "tailwind",
       "link":"https://tailwindcss.com/"
     },
     {
       "name": "Svelte",
-      "imagePath": "public/images/svelte.png",
+      "imagePath": "images/svelte.png",
       "alt": "svelte",
       "link":"https://svelte.dev/"
     }
@@ -135,13 +135,13 @@
   "cardsCTFPlayer": [
     {
       "name": "Hack the Box",
-      "imagePath": "public/images/htb1.webp",
+      "imagePath": "images/htb1.webp",
       "alt": "htb1",
       "link":"https://www.hackthebox.com/"
     },
     {
       "name": "Try Hack Me",
-      "imagePath": "public/images/tryHackMe.png",
+      "imagePath": "images/tryHackMe.png",
       "alt": "tryHackMe",
       "link": "https://tryhackme.com/"
     }
@@ -149,13 +149,13 @@
   "cardsCurrent": [
     {
       "name": "Magíster en Ciberseguridad",
-      "imagePath": "public/images/puce.png",
+      "imagePath": "images/puce.png",
       "alt": "puce",
       "link": "https://www.pucesa.edu.ec/mci/"
     },
     {
       "name": "Análista de Ciberseguridad",
-      "imagePath": "public/images/acad-ciber.png",
+      "imagePath": "images/acad-ciber.png",
       "alt": "acad-ciber",
       "link": "https://academia-ciberseguridad.com/"
     }
@@ -163,7 +163,7 @@
   "cardsCulminate": [
     {
       "name": "Ingeniería en Sistemas e Informática",
-      "imagePath": "public/images/uniandes.png",
+      "imagePath": "images/uniandes.png",
       "alt": "uniandes",
       "link": "https://www.uniandes.edu.ec/"
     }
@@ -171,7 +171,7 @@
   "cardsCertCisco": [
     {
       "name": "Estados U.",
-      "imagePath": "public/images/ciscoNA.png",
+      "imagePath": "images/ciscoNA.png",
       "alt": "certcredlly",
       "link": "https://skillsforall.com/course/ethical-hacker?courseLang=en-US"
     }
@@ -179,7 +179,7 @@
   "cardsCertAcademyMexico": [
     {
       "name": "México",
-      "imagePath": "public/images/acad-ciber.png",
+      "imagePath": "images/acad-ciber.png",
       "alt": "acad-ciber",
       "link": "https://academia-ciberseguridad.com"
     }
@@ -187,7 +187,7 @@
   "cardsCertHackerMentor": [
     {
       "name": "Ecuador",
-      "imagePath": "public/images/hm.png",
+      "imagePath": "images/hm.png",
       "alt": "hm",
       "link": "https://www.hacker-mentor.com/"
     }
@@ -195,7 +195,7 @@
   "cardsCertLPI": [
     {
       "name": "Canada",
-      "imagePath": "public/images/lpi.webp",
+      "imagePath": "images/lpi.webp",
       "alt": "lpi",
       "link": "https://www.lpi.org/our-certifications/linux-essentials-overview/"
     }
