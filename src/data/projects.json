@@ -2,7 +2,7 @@
   {
     "name": "Infraestructura de Redes",
     "description": "Diseño y configuración de una infraestructura de red que permitan la interconexión de redes LAN y WAN, teniendo un enfoque de confidencialidad, integridad y disponibilidad.",
-    "image": "images/redes.webp",
+    "image": "public/images/redes.webp",
     "technologies": [
       { "name": "Packet Tracer", "image": "packetTracer.webp" },
       { "name": "Red Lan y Wan", "image": "infraRed.png" },
@@ -14,7 +14,7 @@
   {
     "name": "Seguridad en Redes",
     "description": "Se comprende conceptos básicos y avanzados de la seguridad perimetral en infraestructuras de redes tanto LAN como WAN, haciendo uso de tecnologías como Firewalls, IPS, Redes privadas virtuales, OPNsense, PFsense, Enrutamiento y también se aplica ataques más comunes a nivel de capa 2.",
-    "image": "images/securidadRed.webp",
+    "image": "public/images/securidadRed.webp",
     "technologies": [
       { "name": "Gns3", "image": "gns3.png" },
       { "name": "OPNsense", "image": "opnsense1.png" },
@@ -32,7 +32,7 @@
   {
     "name": "Personalización Kali Linux",
     "description": "A diferencia de Windows, Kali Purple se puede personalizar a un entorno más amigable, para ello se usa herramientas como: BSPWM | Kytty | Picom | Lsd | Bat | Neofetch | .p10k | Nvim | 3lock | Flameshot, entre otras herramientas. Además Kali Purple lo uso para desplegar laboratorios controlados y experiementar la simulación de entornos reales para la práctica del hackin ético.",
-    "image": "images/kali.webp",
+    "image": "public/images/kali.webp",
     "technologies": [
       { "name": "Kali Purple", "image": "kali-purple.png" },
       { "name": "Linux", "image": "linux.png" },
@@ -49,7 +49,7 @@
   {
     "name": "Pasatiempo Photoshop",
     "description": "Es un hobbit que realizo en mis tiempos libres, creando flayers publicitarios, reconstruyendo fotografías dañadas, diseñando logos, e incluso hago uso de otras de herramientas del paquete de Adobe, como: After Effects | Premiere | Audition.",
-    "image": "images/photoshop-hobbit.webp",
+    "image": "public/images/photoshop-hobbit.webp",
     "technologies": [
       { "name": "Photoshop", "image": "photoshop.png" },
       { "name": "Audition", "image": "audition.png" },

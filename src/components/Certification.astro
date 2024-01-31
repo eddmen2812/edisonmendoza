@@ -4,6 +4,7 @@ import LinkedinIcon from "../components/icons/linkedin-icon.astro";
 import AcademyCyberIcon from "../components/icons/academy_cyber-icon.astro";
 import CiscoBadgeIcon from "../components/icons/badge_creddly-icon.astro";
 import HMIcon from "../components/icons/badge_HM-icon.astro";
+import LpiIcon from '../components/icons/lpi-icon.astro';
 import {
     BADGE_CISCO_URL,
     LINKEDIN_URL,
@@ -11,11 +12,13 @@ import {
     ACAD_CIBER_URL,
     ACAD_HM_BADGE_URL,
     ACAD_CIBER_BADGE_URL,
+    LPI01_CERT_URL,
 } from "../constants/urls.ts";
 import {
     cardsCertHackerMentor,
     cardsCertAcademyMexico,
     cardsCertCisco,
+    cardsCertLPI,
 } from "../data/skills.json";
 ---
 
@@ -23,6 +26,32 @@ import {
     <span class="title">Certificaciones 🔖</span>
     <div class="certifications">
         <div class="certification">
+            <div class="cards">
+                {
+                    cardsCertLPI.map(
+                        ({ name, imagePath, alt, link }) => (
+                            <CardCertification
+                                name={name}
+                                imagePath={imagePath}
+                                alt={alt}
+                                link={link}
+                            />
+                        ),
+                    )
+                }
+                <div class="links">
+                    <a
+                        class="btn-icon"
+                        target="_blank"
+                        href={LPI01_CERT_URL}
+                    >
+                        Ir a las Certificaciones <LpiIcon
+                            
+                        />
+                    </a>
+                </div>
+            </div>
+
             <div class="cards">
                 {
                     cardsCertHackerMentor.map(
