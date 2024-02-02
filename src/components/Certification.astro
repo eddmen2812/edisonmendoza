@@ -28,6 +28,25 @@ import {
         <div class="certification">
             <div class="cards">
                 {
+                    cardsCertHackerMentor.map(
+                        ({ name, imagePath, alt, link }) => (
+                            <CardCertification
+                                name={name}
+                                imagePath={imagePath}
+                                alt={alt}
+                                link={link}
+                            />
+                        ),
+                    )
+                }
+                <div class="links">
+                    <a class="btn-icon" target="_blank" href={ACAD_HM_BADGE_URL}
+                        >Click para ver👉 Certificaciones<HMIcon />
+                    </a>
+                </div>
+            </div>
+            <div class="cards">
+                {
                     cardsCertCisco.map(({ name, imagePath, alt, link }) => (
                         <CardCertification
                             name={name}
@@ -79,25 +98,6 @@ import {
                         target="_blank"
                         href={ACAD_CIBER_BADGE_URL}
                         >Click para ver👉 Certificaciones<AcademyCyberIcon />
-                    </a>
-                </div>
-            </div>
-            <div class="cards">
-                {
-                    cardsCertHackerMentor.map(
-                        ({ name, imagePath, alt, link }) => (
-                            <CardCertification
-                                name={name}
-                                imagePath={imagePath}
-                                alt={alt}
-                                link={link}
-                            />
-                        ),
-                    )
-                }
-                <div class="links">
-                    <a class="btn-icon" target="_blank" href={ACAD_HM_BADGE_URL}
-                        >Click para ver👉 Certificaciones<HMIcon />
                     </a>
                 </div>
             </div>
