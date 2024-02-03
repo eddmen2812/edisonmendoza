@@ -6,6 +6,7 @@ import AcademyCyberIcon from "../components/icons/academy_cyber-icon.astro";
 import CiscoBadgeIcon from "../components/icons/badge_creddly-icon.astro";
 import HMIcon from "../components/icons/badge_HM-icon.astro";
 import LpiIcon from "../components/icons/lpi-icon.astro";
+import TryHackMeIcon from '../components/icons/tryhackme-icon.astro'
 import {
   GITHUB_URL,
   LINKEDIN_URL,
@@ -15,16 +16,18 @@ import {
   ACAD_HM_BADGE_URL,
   EMAIL_URL,
   LPI01_CERT_URL,
+  TRYHACK_PROFILE_URL,
 } from "../constants/urls.ts";
 import SendIcon from "./icons/send-icon.astro";
 import CopyIcon from "./icons/copy-icon.astro";
+import TryhackmeIcon from "../components/icons/tryhackme-icon.astro";
 ---
 
 <section id="contact">
   <span class="title">Contactame 📨</span>
   <div class="container">
     <p class="description">
-      Busco una nueva oportunidad, Os dejo mi correo, escribeme!
+      Busco una nueva oportunidad, adjunto mi correo, escribeme!
     </p>
     <div class="email-wrapper">
       <div class="email">
@@ -53,16 +56,19 @@ import CopyIcon from "./icons/copy-icon.astro";
         <GithubIcon height={40} width={40} />
       </a>
       <a target="_blank" href={LPI01_CERT_URL} class="icon">
-        <LpiIcon height={38} width={38} />
+        <LpiIcon height={33} width={33} />
       </a>
       <a target="_blank" href={ACAD_CIBER_BADGE_URL} class="icon">
-        <AcademyCyberIcon height={40} width={40} />
+        <AcademyCyberIcon height={38} width={38} />
       </a>
       <a target="_blank" href={BADGE_CISCO_URL} class="icon">
         <CiscoBadgeIcon height={40} width={40} />
       </a>
       <a target="_blank" href={ACAD_HM_BADGE_URL} class="icon">
         <HMIcon height={40} width={40} />
+      </a>
+      <a target="_blank" href={TRYHACK_PROFILE_URL} class="icon">
+        <TryHackMeIcon height={45} width={45} />
       </a>
     </div>
     <!-- 
