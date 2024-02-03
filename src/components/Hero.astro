@@ -9,6 +9,7 @@ import SendMailIcon from "../components/icons/send_mail-icon.astro";
 import SocialPill from "../components/icons/socialPill.astro";
 import CopyIcon from "./icons/copy-icon.astro";
 import TryHackMeIcon from '../components/icons/tryhackme-icon.astro'
+import LpiIcon from "../components/icons/lpi-icon.astro";
 import {
   GITHUB_URL,
   LINKEDIN_URL,
@@ -18,6 +19,7 @@ import {
   ACAD_HM_BADGE_URL,
   EMAIL_URL,
   TRYHACK_PROFILE_URL,
+  LPI01_CERT_URL,
 } from "../constants/urls.ts";
 import { ImportsNotUsedAsValues } from "typescript";
 import TryhackmeIcon from "../components/icons/tryhackme-icon.astro";
@@ -57,7 +59,21 @@ import TryhackmeIcon from "../components/icons/tryhackme-icon.astro";
         </a>
       -->
       </div>
+      
     </div>
+    <div class="bottom">
+    <div class="social">
+        
+      <a target="_blank" href={BADGE_CISCO_URL} class="icon">
+        <CiscoBadgeIcon height={40} width={40} />
+      </a>
+      <a target="_blank" href={ACAD_HM_BADGE_URL} class="icon">
+        <HMIcon height={40} width={40} />
+      </a>
+      <a target="_blank" href={LPI01_CERT_URL} class="icon">
+        <LpiIcon height={33} width={33} />
+      </a>
+    </div></div>
     <div class="bottomail">
       <SendMailIcon />
       <SocialPill class="btn" href={`mailto:${EMAIL_URL}`}>
