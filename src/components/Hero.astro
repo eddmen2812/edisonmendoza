@@ -8,7 +8,7 @@ import HMIcon from "../components/icons/badge_HM-icon.astro";
 import SendMailIcon from "../components/icons/send_mail-icon.astro";
 import SocialPill from "../components/icons/socialPill.astro";
 import CopyIcon from "./icons/copy-icon.astro";
-import TryHackMeIcon from '../components/icons/tryhackme-icon.astro'
+import TryHackMeIcon from "../components/icons/tryhackme-icon.astro";
 import LpiIcon from "../components/icons/lpi-icon.astro";
 import {
   GITHUB_URL,
@@ -34,8 +34,13 @@ import TryhackmeIcon from "../components/icons/tryhackme-icon.astro";
     </span>
 
     <div class="bottom">
-      <a class="btn" href="https://drive.google.com/file/d/18KZtN_EAlqOtzxxgXU5OnFbpQ2mAKS5K/view?usp=sharing"  target="_blank"
-      onclick="window.open(this.href,'_blank'); return false;"> Ver Currículum
+      <a
+        class="btn"
+        href="https://drive.google.com/file/d/18KZtN_EAlqOtzxxgXU5OnFbpQ2mAKS5K/view?usp=sharing"
+        target="_blank"
+        onclick="window.open(this.href,'_blank'); return false;"
+      >
+        Ver Currículum
       </a>
       <div class="social">
         <a target="_blank" href={LINKEDIN_URL} class="icon">
@@ -59,26 +64,24 @@ import TryhackmeIcon from "../components/icons/tryhackme-icon.astro";
         </a>
       -->
       </div>
-      
     </div>
     <div class="bottom">
-    <div class="social">
-        
-      <a target="_blank" href={BADGE_CISCO_URL} class="icon">
-        <CiscoBadgeIcon height={40} width={40} />
-      </a>
-      <a target="_blank" href={ACAD_HM_BADGE_URL} class="icon">
-        <HMIcon height={40} width={40} />
-      </a>
-      <a target="_blank" href={LPI01_CERT_URL} class="icon">
-        <LpiIcon height={33} width={33} />
-      </a>
-    </div></div>
+      <div class="social">
+        <a target="_blank" href={LPI01_CERT_URL} class="icon">
+          <LpiIcon height={33} width={33} />
+        </a>
+        <a target="_blank" href={BADGE_CISCO_URL} class="icon">
+          <CiscoBadgeIcon height={40} width={40} />
+        </a>
+        <a target="_blank" href={ACAD_HM_BADGE_URL} class="icon">
+          <HMIcon height={40} width={40} />
+        </a>
+      </div>
+    </div>
     <div class="bottomail">
       <SendMailIcon />
       <SocialPill class="btn" href={`mailto:${EMAIL_URL}`}>
         <Badge>edinson.mendoza@academia-ciberseguridad.com</Badge>
-
       </SocialPill>
       <!-- 
       <div>
@@ -97,7 +100,6 @@ import TryhackmeIcon from "../components/icons/tryhackme-icon.astro";
 </section>
 
 <style>
-
   section.home {
     display: flex;
     position: flex;
@@ -117,7 +119,7 @@ import TryhackmeIcon from "../components/icons/tryhackme-icon.astro";
   .main-title .bottom {
     margin-top: 1.2rem;
     display: flex;
-    
+
     justify-content: flex-start;
     align-items: center;
     gap: 1rem;
@@ -260,36 +262,36 @@ import TryhackmeIcon from "../components/icons/tryhackme-icon.astro";
       justify-content: first baseline;
     }
     .buttons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-  }
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+    }
     .buttons .icon {
-    position: relative;
-  }
-  .buttons .icon {
-    padding: 12px 16px;
-    border-radius: 0.5rem;
-    background-color: var(--bg-color-button-4);
-    color: var(--bg-color);
-    font-size: 1.2rem;
-    font-weight: 600;
-    transition: all 0.2s ease;
-    gap: 0.5rem;
-  }
-  .buttons .icon .copy-message {
-    position: flex;
-    top: 50%;
-    left: 50%;
-    
-    display: none;
-    background-color: var(--bg-color-button);
-    border-radius: 0.5rem;
-    color: var(--font-color);
-    font-size: 14px;
-    padding: 4px 8px;
-  }
+      position: relative;
+    }
+    .buttons .icon {
+      padding: 12px 16px;
+      border-radius: 0.5rem;
+      background-color: var(--bg-color-button-4);
+      color: var(--bg-color);
+      font-size: 1.2rem;
+      font-weight: 600;
+      transition: all 0.2s ease;
+      gap: 0.5rem;
+    }
+    .buttons .icon .copy-message {
+      position: flex;
+      top: 50%;
+      left: 50%;
+
+      display: none;
+      background-color: var(--bg-color-button);
+      border-radius: 0.5rem;
+      color: var(--font-color);
+      font-size: 14px;
+      padding: 4px 8px;
+    }
   }
 
   @media (max-width: 480px) {
