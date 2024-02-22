@@ -130,6 +130,12 @@
       "imagePath": "images/svelte.png",
       "alt": "svelte",
       "link":"https://svelte.dev/"
+    },
+    {
+      "name": "GO",
+      "imagePath": "images/go.png",
+      "alt": "go",
+      "link":"https://go.dev/"
     }
   ],
   "cardsCTFPlayer": [
