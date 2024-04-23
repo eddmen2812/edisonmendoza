@@ -47,16 +47,19 @@
 
   },
   {
-    "name": "Pasatiempo Photoshop",
-    "description": "Es un hobbit que realizo en mis tiempos libres, creando flayers publicitarios, reconstruyendo fotografías dañadas, diseñando logos, e incluso hago uso de otras de herramientas del paquete de Adobe, como: After Effects | Premiere | Audition.",
-    "image": "images/photoshop-hobbit.webp",
+    "name": "Laboratorios Controlados",
+    "description": "Encontrarás varias fases del hacking ético como: Reconocimiento | Escanéo | Explotación | Persistencia | Escalada de Privelegios y Borrado de Huellas en temas como el Pivoting | Buffer-Overflow | Redes Wi-Fi | Forense y entre otros temás más",
+    "image": "images/lab_hacking.webp",
     "technologies": [
-      { "name": "Photoshop", "image": "photoshop.png" },
-      { "name": "Audition", "image": "audition.png" },
-      { "name": "Premiere", "image": "premiere.png" },
-      { "name": "Effects", "image": "effects.png" }
+      { "name": "Kali Purple", "image": "kali-purple.png" },
+      { "name": "Linux", "image": "linux.png" },
+      { "name": "Metasploit", "image": "metasploit.png" },
+      { "name": "BurpSuite", "image": "burpSuite.png" },
+      { "name": "Nmap", "image": "nmap.png" },
+      { "name": "HashCat", "image": "hashcat.png" },
+      { "name": "JohntheRipper", "image": "john.png" },
+      { "name": "Maltego", "image": "maltego.png" }
     ],
     "urlGithub": "https://github.com/eddmen2812/Hobbit-Photoshop"
-
   }
 ]
