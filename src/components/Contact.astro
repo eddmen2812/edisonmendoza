@@ -1,0 +1,322 @@
+---
+import Badge from "../components/Badge.astro";
+import GithubIcon from "../components/icons/github-icon.astro";
+import LinkedinIcon from "../components/icons/linkedin-icon.astro";
+import AcademyCyberIcon from "../components/icons/academy_cyber-icon.astro";
+import CiscoBadgeIcon from "../components/icons/badge_creddly-icon.astro";
+import HMIcon from "../components/icons/badge_HM-icon.astro";
+import LpiIcon from "../components/icons/lpi-icon.astro";
+import TryHackMeIcon from '../components/icons/tryhackme-icon.astro'
+import {
+  GITHUB_URL,
+  LINKEDIN_URL,
+  PUCE_URL,
+  BADGE_CISCO_URL,
+  ACAD_CIBER_BADGE_URL,
+  ACAD_HM_BADGE_URL,
+  EMAIL_URL,
+  LPI01_CERT_URL,
+  TRYHACK_PROFILE_URL,
+} from "../constants/urls.ts";
+import SendIcon from "./icons/send-icon.astro";
+import CopyIcon from "./icons/copy-icon.astro";
+import TryhackmeIcon from "../components/icons/tryhackme-icon.astro";
+---
+
+<section id="contact">
+  <span class="title">Contactame 📨</span>
+  <div class="container">
+    <p class="description">
+      Busco una nueva oportunidad, adjunto mi correo, escribeme!
+    </p>
+    <div class="email-wrapper">
+      <div class="email">
+        <span>{EMAIL_URL}</span>
+      </div>
+      <div class="buttons">
+        <a href={`mailto:${EMAIL_URL}`} class="btn icon">
+          <SendIcon width={28} height={28} /> Enviar e-mail
+        </a>
+        <button class="btn icon copy">
+          <CopyIcon width={28} height={28} />
+          <span class="copy-message" style="display: none;"
+            >¡e-mail copiado!</span
+          >
+          <span class="button-text">Copiar e-mail</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="links">
+      <a target="_blank" href={LINKEDIN_URL} class="icon">
+        <LinkedinIcon height={42} width={42} />
+      </a>
+      <a target="_blank" href={GITHUB_URL} class="icon">
+        <GithubIcon height={40} width={40} />
+      </a>
+      <a target="_blank" href={LPI01_CERT_URL} class="icon">
+        <LpiIcon height={33} width={33} />
+      </a>
+      <a target="_blank" href={ACAD_CIBER_BADGE_URL} class="icon">
+        <AcademyCyberIcon height={38} width={38} />
+      </a>
+      <a target="_blank" href={BADGE_CISCO_URL} class="icon">
+        <CiscoBadgeIcon height={40} width={40} />
+      </a>
+      <a target="_blank" href={ACAD_HM_BADGE_URL} class="icon">
+        <HMIcon height={40} width={40} />
+      </a>
+      <a target="_blank" href={TRYHACK_PROFILE_URL} class="icon">
+        <TryHackMeIcon height={45} width={45} />
+      </a>
+    </div>
+    <!-- 
+    <div class="detail">
+      <span class="text">
+        Para mayor información, vistame: 
+        <a target="_blank" href={GITHUB_URL}>Edison Mendoza</a>
+      </span>
+    </div>
+    -->
+  </div>
+
+  <p class="ftitle">
+    © 2024 <a
+    href="https://www.linkedin.com/in/deed2812/"
+    target="_blank"
+    rel="noopener noreferrer">Mendoza Almachi Edison Marcelo </a
+    > <br /><br /><br /><br /><br />
+    <span class="follow">Mentores:</span>
+    <a
+      href="https://www.linkedin.com/in/s4vitar/"
+      target="_blank"
+      rel="noopener noreferrer">S4vitar</a
+    > | <a
+    href="https://www.linkedin.com/in/maalfer1/"
+    target="_blank"
+    rel="noopener noreferrer"> Piguino de Mario</a
+    > | <a
+    href="https://www.linkedin.com/in/david-rodriguez-ramos/"
+    target="_blank"
+    rel="noopener noreferrer">Xerocs</a
+    > | <a
+    href="https://www.linkedin.com/in/jose-javier-pastor-aka-hackavis-a173a1200/"
+    target="_blank"
+    rel="noopener noreferrer">Hackvis</a
+    > | <a
+    href="https://www.linkedin.com/in/braismoure/"
+    target="_blank"
+    rel="noopener noreferrer">MoureDEV</a
+    > | <a
+    href="https://www.linkedin.com/in/midudev/"
+    target="_blank"
+    rel="noopener noreferrer">MiduDEV</a
+    >
+  </p>
+</section>
+
+<script>
+  const copyToClipboard = () => {
+    const emailUrl = document.querySelector(".email span")?.textContent || "";
+    navigator.clipboard.writeText(emailUrl);
+
+    const copyButton = document.querySelector(".copy");
+    const copyMessage = document.querySelector(".copy-message");
+
+    // Guardar el texto original del botón
+    const buttonTextElement = document.querySelector(".button-text");
+
+    if (buttonTextElement) {
+      const originalButtonText = buttonTextElement.textContent;
+
+      // Cambiar el texto del botón a "Email copiado!"
+      buttonTextElement.textContent = "";
+
+      // Verificar si copyMessage existe antes de acceder a su propiedad style
+      if (copyMessage instanceof HTMLElement) {
+        copyMessage.style.display = "inline";
+
+        // Restaurar el texto original después de unos segundos (por ejemplo, 3 segundos)
+        setTimeout(() => {
+          if (buttonTextElement) {
+            buttonTextElement.textContent = originalButtonText;
+
+            // Verificar si copyMessage.style existe antes de acceder a su propiedad display
+            if (copyMessage.style) {
+              copyMessage.style.display = "none";
+            }
+          }
+        }, 3000);
+      }
+    }
+  };
+
+  document.querySelector(".copy.icon")?.addEventListener("click", () => {
+    copyToClipboard();
+  });
+</script>
+
+<style>
+  section#contact {
+    margin-bottom: 8rem;
+  }
+  .ftitle {
+    text-align: center;
+    padding: 1px;
+    color: var(--primary-color);
+    white-space: pre-line;
+  }
+  .ftitle .follow {
+    color: var(--font-color-3);
+    font-size: 22px;
+    line-height: 1.5;
+    font-weight: 500;
+  }
+  .ftitle2 {
+    text-align: right;
+    padding: 20px;
+    color: var(--primary-color);
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 50%;
+    margin: 4rem auto;
+  }
+
+  .container .description {
+    font-size: 28px;
+    font-weight: 500;
+    text-align: center;
+    color: var(--font-color);
+  }
+
+  .footer {
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .buttons .icon {
+    position: relative;
+  }
+
+  .buttons .icon .copy-message {
+    position: flex;
+    top: 50%;
+    left: 50%;
+
+    display: none;
+    background-color: var(--bg-color-button);
+    border-radius: 0.5rem;
+    color: var(--font-color);
+    font-size: 14px;
+    padding: 4px 8px;
+  }
+
+  .links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .links .icon {
+    font-size: 16px;
+    color: var(--font-color);
+    transition: 0.4s;
+  }
+
+  .links .icon:hover {
+    color: var(--primary-color);
+  }
+
+  .detail {
+    text-align: center;
+    color: var(--font-color-2);
+  }
+
+  .detail .text {
+    font-size: 22px;
+  }
+
+  .detail .text a {
+    text-decoration: none;
+    color: var(--primary-color);
+  }
+
+  .email-wrapper {
+    display: contents;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .email-wrapper .email {
+    padding: 0.8rem 1.2rem;
+    background-color: var(--bg-color-button);
+    border-radius: 0.5rem;
+    color: var(--font-color);
+    border: 1px solid var(--border-color);
+    font-size: 22px;
+    font-weight: 500;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .email-wrapper .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .email-wrapper .buttons .icon {
+    padding: 12px 16px;
+    border-radius: 0.5rem;
+    background-color: var(--bg-color-button-4);
+    color: var(--bg-color);
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    gap: 0.5rem;
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      max-width: 90%;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .container {
+      max-width: 100%;
+      margin: 5rem auto;
+    }
+
+    .container .description {
+      font-size: 21px;
+    }
+
+    .links .icon {
+      font-size: 14px;
+    }
+
+    .detail .text {
+      font-size: 16px;
+    }
+
+    .email-wrapper .email {
+      font-size: 18px;
+    }
+  }
+</style>

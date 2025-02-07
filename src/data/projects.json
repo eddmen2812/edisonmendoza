@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Infraestructura de Redes",
+    "description": "Diseño y configuración de una infraestructura de red que permitan la interconexión de redes LAN y WAN, teniendo un enfoque de confidencialidad, integridad y disponibilidad.",
+    "image": "images/redes.webp",
+    "technologies": [
+      { "name": "Packet Tracer", "image": "packetTracer.webp" },
+      { "name": "Red Lan y Wan", "image": "infraRed.png" },
+      { "name": "Red LAN y WAN", "image": "infraRed2.png" }
+    ],
+    "urlGithub": "https://github.com/eddmen2812/Infraestructura_Redes/blob/main/Practics3/P3.01_Entorno-Real/Red_00_Entorno_Real.md"
+
+  },
+  {
+    "name": "Seguridad en Redes",
+    "description": "Se comprende conceptos básicos y avanzados de la seguridad perimetral en infraestructuras de redes tanto LAN como WAN, haciendo uso de tecnologías como Firewalls, IPS, Redes privadas virtuales, OPNsense, PFsense, Enrutamiento y también se aplica ataques más comunes a nivel de capa 2.",
+    "image": "images/securidadRed.webp",
+    "technologies": [
+      { "name": "Gns3", "image": "gns3.png" },
+      { "name": "OPNsense", "image": "opnsense1.png" },
+      { "name": "PFsense", "image": "pfSense2.png" },
+      { "name": "Fortinet", "image": "fortinet.png" },
+      { "name": "Wazuh", "image": "wazuh.png" },
+      { "name": "Kali Purple", "image": "kali-purple.png" },
+      { "name": "Yerssinia", "image": "yersinia.png" },
+      { "name": "Etthercap", "image": "ettercap.png" },
+      { "name": "Wireshark", "image": "wireshark.png" },
+      { "name": "Betthercap", "image": "betthercap.png" }
+    ],
+    "urlGithub": "https://github.com/eddmen2812/Seguridad_Redes/blob/main/Practic_4_Seguridad2/Segruidad_OPNSense_Portal-Cautivo.md"
+  },
+  {
+    "name": "Personalización Kali Linux",
+    "description": "A diferencia de Windows, Kali Purple se puede personalizar a un entorno más amigable, para ello se usa herramientas como: BSPWM | Kytty | Picom | Lsd | Bat | Neofetch | .p10k | Nvim | 3lock | Flameshot, entre otras herramientas. Además Kali Purple lo uso para desplegar laboratorios controlados y experiementar la simulación de entornos reales para la práctica del hackin ético.",
+    "image": "images/kali.webp",
+    "technologies": [
+      { "name": "Kali Purple", "image": "kali-purple.png" },
+      { "name": "Linux", "image": "linux.png" },
+      { "name": "Metasploit", "image": "metasploit.png" },
+      { "name": "BurpSuite", "image": "burpSuite.png" },
+      { "name": "Nmap", "image": "nmap.png" },
+      { "name": "HashCat", "image": "hashcat.png" },
+      { "name": "JohntheRipper", "image": "john.png" },
+      { "name": "Maltego", "image": "maltego.png" }
+    ],
+    "urlGithub": "https://github.com/eddmen2812/Personalizaci-n_Kali-Purple"
+
+  },
+  {
+    "name": "Laboratorios Controlados",
+    "description": "Encontrarás varias fases del hacking ético como: Reconocimiento | Escanéo | Explotación | Persistencia | Escalada de Privelegios y Borrado de Huellas en temas como el Pivoting | Buffer-Overflow | Redes Wi-Fi | Forense y entre otros temás más",
+    "image": "images/lab_hacking.webp",
+    "technologies": [
+      { "name": "Kali Purple", "image": "kali-purple.png" },
+      { "name": "Linux", "image": "linux.png" },
+      { "name": "Metasploit", "image": "metasploit.png" },
+      { "name": "BurpSuite", "image": "burpSuite.png" },
+      { "name": "Nmap", "image": "nmap.png" },
+      { "name": "HashCat", "image": "hashcat.png" },
+      { "name": "JohntheRipper", "image": "john.png" },
+      { "name": "Maltego", "image": "maltego.png" }
+    ],
+    "urlGithub": "https://github.com/eddmen2812/lab_hacking"
+  }
+]

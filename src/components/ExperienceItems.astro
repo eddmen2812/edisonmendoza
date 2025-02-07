@@ -1,0 +1,83 @@
+---
+import ExperienceItem from '../components/ExperienceItems.astro'
+interface Props {
+  title?: string
+  description: string
+  link?: string
+  date: string
+  location?: string
+}
+
+const { title, description, link, date ,location} = Astro.props
+---
+
+<div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-3.5 border border-white dark:border-gray-900 " style="inset-inline-start: -1.4rem;"></div>
+</div>
+<time class="time text-gray-400 dark:text-gray-200">{date}</time
+>
+<h3 class="titu">
+  {title}
+</h3>
+<p>
+  {description}
+</p>
+<time>Empresa: {location}</time>
+<style>
+  time {
+      margin-bottom: 0.25rem;
+      font-size: 0.85rem/* 14px */;
+    line-height: 1.25rem/* 20px */;
+    font-weight: 800;
+    line-height: 1;
+   color: var(--font-color);
+
+  }
+  .titu {
+    font-size: 1.75rem/* 18px */;
+    line-height: 1.75rem/* 28px */;
+    font-weight: 600;
+   
+    color: var(--fourth-color);
+    
+  }
+
+
+  .li{
+      position: relative;
+      margin-bottom: 2.5rem;
+      margin-inline-start: 1rem;
+  }
+
+  .wrap {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 2rem;
+  }
+
+  .description {
+      font-size: 22px;
+      font-weight: 500;
+      line-height: 1.5;
+      color: var(--font-color-2);
+  }
+
+  .description .high {
+      color: var(--primary-color);
+  }
+
+  @media (max-width: 900px) {
+      section {
+          padding: 0;
+      }
+      section .description {
+          font-size: 18px;
+          max-width: 100%;
+      }
+
+      .wrap {
+          flex-direction: column;
+          gap: 2rem;
+      }
+  }
+</style>

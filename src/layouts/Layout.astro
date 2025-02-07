@@ -1,0 +1,206 @@
+---
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+const fontRedressed = 'https://fonts.googleapis.com/css2?family='
+	+ 'Redressed&family=Yellowtail&display=swap';
+const fontSpaceGrotesk = 'https://fonts.googleapis.com/css2?family='
+	+ 'Redressed&family=Space+Grotesk:wght@300;400;500;600;700&family='
+	+ 'Yellowtail&display=swap';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/svg+xml" href="/logo.ico" />
+		<link href={fontRedressed} rel="stylesheet">
+		<link href={fontSpaceGrotesk} rel="stylesheet">
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+
+<style is:global>
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+	:root {
+		--bg-color: #f7f7f7;
+		--bg-color-2: #3b82f6a3;
+		--bg-color-3: #3b82f6;
+		--bg-color-4:#f9f9f9;
+		--bg-color-5:#1f2937;
+		--bg-color-scroll: #aaaaaa;
+		--font-color: #070707;
+		--font-color-2: #070707bd;
+		--font-color-3: #918a06;
+		--primary-color: #3b82f6;
+		--second-color: #1f2937;
+		--third-color: #e7e9ea;
+		--fourth-color: #2a3edc;
+		--fifth-color:#eb2727;
+		--bg-color-button: #e6e6ee;
+		--bg-color-button-2: #3b82f6;
+		--bg-color-button-3:  #000000;
+		--bg-color-button-4:#15259f;
+		--bg-color-button-hover: #dcdcdc;
+		--bg-color-tooltip: #fff;
+		--bg-dark3: #4b5563;
+		--border-color: #d1d5db;
+		--border-color-nav: #cbcbcb;
+		--bg-color-badge: #1f2937;
+		--text-shadow-color: #000000;
+	}
+
+	body {
+		color: var(--font-color);
+		
+		transition: 0.1s;
+		-webkit-transition: 0.1s;
+		-moz-transition: 0.1s;
+		-o-transition: 0.1s;
+		background-color: var(--bg-color);
+	}
+
+	body.dark-theme {
+		--bg-color: #111827;
+		--bg-color-2: #3b82f6;
+		--bg-color-3: #1f2937;
+		--bg-color-4:#f9f9f9;
+		--bg-color-5:#1f2937;
+		--font-color: #f7f7f7;
+		--font-color-2: #f7f7f7bd;
+		--font-color-3: #bf9e1c;
+		--fourth-color: #c9aa2b;
+		--border-color-nav: #374151;
+		--bg-color-button: #1f2937;
+		--bg-color-button-2: #e7e9ea;
+		--bg-color-button-3:  #3b82f6;
+		--bg-color-button-4: #e7e9ea;
+		--bg-color-button-hover: #2d3949;
+		--bg-dark3: #d1d5db;
+		--bg-color-tooltip: var(--bg-color-button);
+		--bg-color-badge: #4b5563;
+	}
+
+	::-webkit-scrollbar {
+		width: 6px;
+		background-color: var(--bg-color);
+	}
+
+	::-webkit-scrollbar-track {
+		background-color: var(--bg-color);
+	}
+
+	::-webkit-scrollbar-thumb {
+		background-color: var(--bg-color-scroll);
+		border-radius: 1rem;
+	}
+
+	::-webkit-scrollbar-thumb:hover {
+		background: var(--bg-color-scroll);
+		box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+	}
+
+	::-webkit-scrollbar-thumb:active {
+		background: var(--bg-color-scroll);
+	}
+
+	html {
+		scroll-behavior: smooth;
+		font-family: "Space Grotesk", sans-serif;
+	}
+
+	button,
+	button.btn,
+	a.btn {
+		font-family: inherit;
+		border-radius: 8px;
+		border: none;
+		background-color: var(--primary-color);
+		color: var(--third-color);
+		padding: 12px 16px;
+		font-size: 20px;
+		cursor: pointer;
+		min-width: 64px;
+		box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+		transition: 0.25s;
+		font-weight: 600;
+		text-decoration: none;
+		display: flex;
+    align-items: center;
+    justify-content: center;
+		gap: 0.5rem;
+	}
+
+	button:hover,
+	a.btn:hover {
+		box-shadow: 0 0.5em 0.5em -0.4em var(--bg-dark3);
+		transform: translateY(-0.25em);
+	}
+
+	section {
+		width: 100%;
+		padding: 4.5rem 0;
+	}
+
+	section > .title {
+		font-weight: bold;
+		font-size: 2.8rem;
+		margin: 1rem 0;
+		align-self: flex-start;
+		color: var(--primary-color);
+	}
+
+	@media (max-width: 900px) {
+		h1.title,
+		.title {
+			font-size: 46px;
+		}
+	}
+
+	@media (max-width: 480px) {
+		section > .title {
+			font-size: 38px;
+		}
+	}
+</style>
+
+<script>
+  const body = document.body;
+  const theme = localStorage.getItem('theme');
+  const darkThemeName = 'dark-theme';
+
+  const savePreference = (theme: string) => {
+    localStorage.removeItem('theme');
+    localStorage.setItem('theme', theme);
+  }
+
+  const setTheme = (theme: string) => {
+    if(theme === 'light') {
+      body.classList.remove(darkThemeName);
+    }
+    if(theme === darkThemeName) {
+      body.classList.add(darkThemeName);
+    }
+    savePreference(theme);
+  }
+
+  if(!theme) {
+    const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    setTheme((isDarkMode) ? darkThemeName : 'light');
+  } else {
+    setTheme(theme);
+  }
+</script>

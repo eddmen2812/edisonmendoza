@@ -1,0 +1,107 @@
+---
+const YEARS_OLD = new Date().getFullYear() - 1995;
+import { GITHUB_URL, LINKEDIN_URL,PUCE_URL,ACAD_CIBER_URL,ACAD_CIBER_BADGE_URL } from '../constants/urls.ts';
+---
+
+<section id="about">
+  <span class="title">Sobre mi 👨‍💼</span>
+  <div class="wrap">
+    <div class="description">
+      <p>
+        <!--Soy <span class="high">Edison Marcelo Mendoza Almachi</span>.-->
+        <!--Tengo {YEARS_OLD} años, -->Soy proactivo, comunicativo, y amable. Me agrada el trabajo en equipo y me adapto a entornos cambiantes.
+      </p>
+      <br>
+      <!--
+      <p>
+        Manejo herramientas de reconocimiento y enumeración
+        <span class="high">(nmap, DNSRecon, Dirb, Sublist3r)</span>, también  herramientas para la detección de vulnerabilidades
+        <span class="high">(nmap, Metasploit, OpenVas)</span> y en bypass <span class="high">(Bethercap, Yersinia, Ethercap, EIGRPWN). </span>
+      </p>
+      <br>-->
+      <p>Realizo laboratorios controlados, simulando entornos reales y poder prácticar las fases del hacking ético como: <span class="high">Reconocimiento | Escáneo | Explotación | Persistencia | Escalada de Privelegios y Borrado de Huellas</span>, a tráves del <span class="high"> Pivoting | Buffer-Overflow | Redes Wi-Fi | Forense. </span> Y en línea uso plataformas como: <span class="high">HackTheBox</span> & <span class="high">TryHackMe</span></p>
+      <br>
+      <p>
+        Actualmente, estoy culminando mi
+        <span class="high">Maestría en Ciberseguridad</span> en la
+        <span class="high">Pontificia Universidad Católica del Ecuador</span></>, además, también soy estudiante de la <span class="high">Academia de Ciberseguridad </span> en <span  class="high">México.</span></a> Todo esto mejorára mis conocimientos sobre el <span class="high">HACKING ÉTICO</span>
+      </p>
+    </div>
+    <div class="image">
+      <figure>
+        <img src="hacking-etico.jpg" alt="programming-image">
+      </figure>
+    </div>
+  </div>
+</section>
+
+<style>
+  section {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+  }
+
+  .wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .description {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: var(--font-color-2);
+  }
+
+  .description .high {
+    color: var(--primary-color);
+  }
+  
+
+  .image {
+    flex: 1;
+  }
+
+  section figure {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 20rem;
+    height: 19rem;
+  }
+
+  section figure img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 51% 49% 49% 51% / 49% 52% 48% 51%;
+    border: 3px solid var(--primary-color);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+    background: #3b82f6;
+  }
+
+  @media (max-width: 900px) {
+    section {
+      padding: 0;
+    }
+    section .description {
+      font-size: 18px;
+      max-width: 100%;
+    }
+
+    .wrap {
+      flex-direction: column;
+      gap: 2rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    section figure {
+      width: 15rem;
+      height: 14rem;
+    }
+  }
+</style>

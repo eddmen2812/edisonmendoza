@@ -1,0 +1,209 @@
+{
+  "cardsBlueTeam": [
+    {
+      "name": "Cyber Threat Intelligence",
+      "imagePath": "images/cti.png",
+      "alt": "cti",
+      "link":""
+    },
+    {
+      "name": "Open Vas",
+      "imagePath": "images/openVas.png",
+      "alt": "openVas",
+      "link":"https://www.openvas.org/"
+    },
+    {
+      "name": "Wazuh",
+      "imagePath": "images/wazuh.png",
+      "alt": "wazuh",
+      "link":"https://wazuh.com/"
+    },
+    {
+      "name": "Splunk",
+      "imagePath": "images/splunk.png",
+      "alt": "splunk",
+      "link":"https://www.splunk.com/"
+    },
+    {
+      "name": "Azure",
+      "imagePath": "images/azure.png",
+      "alt": "azure",
+      "link":"https://azure.microsoft.com/en-us"
+    },
+    {
+      "name": "OPNsense",
+      "imagePath": "images/opnsense1.png",
+      "alt": "opnsense1",
+      "link":"https://opnsense.org/"
+    },
+    {
+      "name": "PFsense",
+      "imagePath": "images/pfSense2.png",
+      "alt": "pfSense2",
+      "link":"https://www.pfsense.org/"
+    },
+
+    {
+      "name": "Fortinet",
+      "imagePath": "images/fortinet.png",
+      "alt": "fortinet",
+      "link":"https://www.hackthebox.com/https://www.fortinet.com/training-certification"
+    }
+  ],
+  "cardsRedTeam": [
+    {
+      "name": "Kali Purple",
+      "imagePath": "images/kali-purple.png",
+      "alt": "kali-purple",
+      "link":"https://www.kali.org/blog/kali-linux-2023-1-release/"
+    },
+    {
+      "name": "Air Crack-ng",
+      "imagePath": "images/aircrack-ng.png",
+      "alt": "aircrack-ng",
+      "link":"https://www.aircrack-ng.org/"
+    },
+    {
+      "name": "Nmap",
+      "imagePath": "images/nmap.png",
+      "alt": "nmap",
+      "link":"https://nmap.org/"
+    },
+    {
+      "name": "Burp Suite",
+      "imagePath": "images/burpSuite.png",
+      "alt": "burpSuite",
+      "link":"https://portswigger.net/burp"
+    },
+    {
+      "name": "Metasploit",
+      "imagePath": "images/metasploit.png",
+      "alt": "metasploit",
+      "link":"https://www.metasploit.com/"
+    },
+    {
+      "name": "Shodan",
+      "imagePath": "images/shodan.png",
+      "alt": "shodan",
+      "link":"https://www.shodan.io/"
+    },
+    {
+      "name": "OSINT",
+      "imagePath": "images/osint.png",
+      "alt": "osint",
+      "link":""
+    },
+    {
+      "name": "Maltego",
+      "imagePath": "images/maltego.png",
+      "alt": "maltego",
+      "link":"https://www.maltego.com/"
+    }
+  ],
+  "cardsDataOthers": [
+    {
+      "name": "Git",
+      "imagePath": "images/git2.png",
+      "alt": "git2",
+      "link":"https://git-scm.com/"
+    },
+    {
+      "name": "Python",
+      "imagePath": "images/python.png",
+      "alt": "python",
+      "link":"https://www.python.org/"
+    },
+    {
+      "name": "Astro",
+      "imagePath": "images/astro2.png",
+      "alt": "astro2",
+      "link":"https://astro.build/"
+    },
+    {
+      "name": "Tailwind",
+      "imagePath": "images/tailwind.png",
+      "alt": "tailwind",
+      "link":"https://tailwindcss.com/"
+    },
+    {
+      "name": "Svelte",
+      "imagePath": "images/svelte.png",
+      "alt": "svelte",
+      "link":"https://svelte.dev/"
+    },
+    {
+      "name": "GO",
+      "imagePath": "images/go.png",
+      "alt": "go",
+      "link":"https://go.dev/"
+    }
+  ],
+  "cardsCTFPlayer": [
+    {
+      "name": "Hack the Box",
+      "imagePath": "images/htb1.webp",
+      "alt": "htb1",
+      "link":"https://www.hackthebox.com/"
+    },
+    {
+      "name": "Try Hack Me",
+      "imagePath": "images/tryHackMe.png",
+      "alt": "tryHackMe",
+      "link": "https://tryhackme.com/p/deed"
+    }
+  ],
+  "cardsCurrent": [
+    {
+      "name": "Magíster en Ciberseguridad",
+      "imagePath": "images/puce.png",
+      "alt": "puce",
+      "link": "https://www.pucesa.edu.ec/mci/"
+    },
+    {
+      "name": "Análista de Ciberseguridad",
+      "imagePath": "images/acad-ciber.png",
+      "alt": "acad-ciber",
+      "link": "https://academia-ciberseguridad.com/"
+    }
+  ],
+  "cardsCulminate": [
+    {
+      "name": "Ingeniería en Sistemas e Informática",
+      "imagePath": "images/uniandes.png",
+      "alt": "uniandes",
+      "link": "https://www.uniandes.edu.ec/"
+    }
+  ],
+  "cardsCertCisco": [
+    {
+      "name": "Estados U.",
+      "imagePath": "images/ciscoNA.png",
+      "alt": "certcredlly",
+      "link": "https://skillsforall.com/course/ethical-hacker?courseLang=en-US"
+    }
+  ],
+  "cardsCertAcademyMexico": [
+    {
+      "name": "México",
+      "imagePath": "images/acad-ciber.png",
+      "alt": "acad-ciber",
+      "link": "https://academia-ciberseguridad.com"
+    }
+  ],
+  "cardsCertHackerMentor": [
+    {
+      "name": "Ecuador",
+      "imagePath": "images/hm.png",
+      "alt": "hm",
+      "link": "https://www.hacker-mentor.com/"
+    }
+  ],
+  "cardsCertLPI": [
+    {
+      "name": "Canada",
+      "imagePath": "images/lpi.webp",
+      "alt": "lpi",
+      "link": "https://www.lpi.org/our-certifications/linux-essentials-overview/"
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+---
+import type { Code } from "astro:components";
+import ExperiencieItem from "../components/ExperienceItems.astro";
+const EXPERIENCE = [
+    {
+        date: "Nov 2022 - Actualmente",
+        title: "Pentester | CTF Player",
+        company: "Cuenta Propia ",
+        location: "Cuenta Propia",
+
+        description: `Levantamiento de laboratorios controlados y prácticos, inspirados en escenarios del mundo real con el fin de comprender técnicas para monitorear y proteger una red, realizar pruebas de penetración e incluso familiarizarme con las alertas de seguridad y la gobernanza para realizar evaluaciones de vulnerabilidad de una red y crear un un plan de gestión de riesgos, incluyendo investigaciones forenses, busqueda OSINT y tener una planificación en respuesta a incidentes.`,
+        link: "https://www.linkedin.com   ",
+    },
+    
+    {
+        date: "Ene 2021 - Actualmente",
+        title: "Soporte Técnico",
+        company: "The Webb Institute",
+        location: 'Multiservicios "El Estudiante"',
+
+        description: "- Trabajo Eventual de fines de semana \n - Mantenimiento preventivo y correctivo de equipos. \n  - Servicio a domicilio. \n  - Actualización e Instalación de Software.",
+   },
+   
+   {
+        date: "Oct 2016 - Actualmente",
+        title: "Soporte Técnico",
+        company: "The Webb Institute",
+        location: 'Gobierno Autónomo Descentralizado de la Provincia de Pichincha',
+
+        description: "- Mantenimiento preventivo y correctivo de la planta industrial ZN100C \n  - Realización de documentación para la manufactura de productos de hormigón.",
+   },
+    {
+        date: "Feb-Ago-Oct 2023",
+        title: "Asistente CDA",
+        company: "The Webb Institute",
+        location: 'Consejo Nacional Electoral',
+
+        description: "- Recepción y despacho de documentos con relación al proceso electoral. \n  - Realización de memorandos, formularios, guías y demás trámites. \n  - Ingreso de matrices, registro de bases de datos de la unidad administrativa. \n - Manejo de archivo físico y/o digital de la  documentación. \n - Y las demás tareas que disponía mi jefe inmediato, o la Dirección",
+    },
+    {
+        date: "Mayo 2020 - Julio 2020",
+        title: "Soporte Técnico",
+        company: "Self-Employed",
+        location: "Cuerpo de Bomberos Puerto Quito",
+
+        description: `- Organización de archivos documentales. \n - Egresos de archivos documentales. \n - Registro de dispositivos tecnológicos. \n - Soporte técnico, instalación y configuración de impresora multifuncional en red LAN. \n - Instalación de red cableada (LAN) \n - Mantenimiento preventivo y correctivo de computadores`,
+    },
+];
+---
+
+<section id="experience">
+    <span class="title">Experiencia Laboral🧑‍💻</span>
+    <ol class="ol">
+        <div class="wrap">
+            <div class="description">
+                {
+                    EXPERIENCE.map((experiencie) => (
+                        <li class="li">
+                            <ExperiencieItem {...experiencie} />
+                        </li>
+                    ))
+                }
+            </div>
+        </div>
+    </ol>
+</section>
+<style>
+    section {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 100%;
+    }
+    .ol {
+        list-style: initial;
+        border-inline-start-width: 2px;
+        margin-left: 0.75rem;
+        
+
+    }
+    .li{
+        position: relative;
+        margin-bottom: 2.5rem;
+        margin-inline-start: 1rem;
+    }
+
+    .wrap {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .description {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.5;
+        color: var(--font-color);
+        white-space: pre-line;
+    }
+
+    .description .high {
+        color: var(--primary-color);
+    }
+
+    @media (max-width: 900px) {
+        section {
+            padding: 0;
+        }
+        section .description {
+            font-size: 18px;
+            max-width: 100%;
+        }
+
+        .wrap {
+            flex-direction: column;
+            gap: 2rem;
+        }
+    }
+</style>

@@ -1,0 +1,137 @@
+---
+import About from '../components/About.astro';
+import Badge from "../components/Badge.astro";
+import ButtonTop from '../components/buttons/button-top.svelte';
+import Contact from '../components/Contact.astro';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import Experience from '../components/Experience.astro';
+import Education from '../components/Education.astro'
+import Loader from '../components/Loader.astro';
+import Navigation from '../components/Navigation.svelte';
+import Portfolio from '../components/Portfolio.astro';
+import Skills from '../components/Skills.astro';
+import Certification from '../components/Certification.astro'
+import Layout from '../layouts/Layout.astro';
+import EducationIcon from '../components/icons/education-icon.svelte';
+import Footer from '../components/Footer.astro'
+---
+
+<Layout title="Pentester | CTF Player | ECHA">
+  <div class="wrapper">
+    <Header />
+    <Navigation client:load/>
+    <div class="content">
+      <div class="blur bottom"></div>
+      <div class="blur top"></div>
+      <Hero />
+<Experience/>
+<Education/>
+      <About />
+      <Portfolio />
+      <Skills />
+<Certification/>
+      <Contact />
+    </div>
+  </div>
+  <!--
+  <div class="loader">
+    <Loader />
+  </div>-->
+  <ButtonTop client:idle/>
+</Layout>
+
+<script>
+   document.addEventListener("DOMContentLoaded", function() {
+    const loader = document.querySelector('.loader');
+    const wrapper = document.querySelector('.wrapper');
+    const load = (): Promise<void> => {
+      return new Promise(resolve => setTimeout(resolve, 1500));
+    }
+
+    load().then(() => {
+      loader?.remove();
+      const fragment = window.location.hash;
+      wrapper?.classList.add('visible');
+      if(fragment) {
+        const targetElement = document.querySelector(fragment);
+        if (targetElement) {
+          targetElement.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+    });
+  });
+</script>
+
+<style>
+  .wrapper {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 2.2s ease-in-out, visibility 2.2s ease-in-out, height 2.2s ease-in-out;
+    height: 0;
+    overflow: hidden;
+  }
+
+  .wrapper.visible {
+    opacity: 1;
+    visibility: visible;
+    height: auto;
+    max-width: 1200px;
+    min-width: 380px;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  .loader {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 2s ease-in-out, visibility 2s ease-in-out;
+  }
+
+  .loader.hidden {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 2s ease-in-out, visibility 2s ease-in-out;
+  }
+
+  .content {
+    margin: 0 1rem;
+  }
+
+  .blur {
+    position: fixed;
+    width: 14rem;
+    height: 14rem;
+    border-radius: 50%;
+    background: #60a5fa;
+    z-index: -9;
+    filter: blur(200px);
+  }
+
+  .blur.bottom {
+    top: 620px;
+    left: 25%;
+  }
+
+  .blur.top {
+    top: 100px;
+    left: 75%;
+  }
+
+  @media (max-width: 900px) {
+    .content {
+      margin: 0 1rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .blur.bottom {
+      top: 380px;
+      left: 0%;
+    }
+    .blur.top {
+      top: 90px;
+      left: 40%;
+    }
+  }
+</style>
