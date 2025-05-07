@@ -10,22 +10,6 @@ import {
     <span class="title">Educación 🧑‍🎓</span>
     <div class="educations">
         <div class="education">
-            <span class="subtitle">Estado: Cursando...</span>
-            <span class="tretitle" >Titulo a Obtener:</span>
-            <div class="cards">
-                {
-                    cardsCurrent.map(({ name, imagePath, alt, link }) => (
-                        <CardEducation
-                            name={name}
-                            imagePath={imagePath}
-                            alt={alt}
-                            link={link}
-                        />
-                    ))
-                }
-            </div>
-        </div>
-        <div class="education">
             <span class="subtitle">Estado: Culminado.</span>
             <span class="tretitle">Titulo Obtenido:</span>
             <div class="cards">
@@ -42,6 +26,23 @@ import {
                 }
             </div>
         </div>
+        <div class="education">
+            <span class="subtitle">Estado: Cursando...</span>
+            <span class="tretitle" >Titulo a Obtener:</span>
+            <div class="cards">
+                {
+                    cardsCurrent.map(({ name, imagePath, alt, link }) => (
+                        <CardEducation
+                            name={name}
+                            imagePath={imagePath}
+                            alt={alt}
+                            link={link}
+                        />
+                    ))
+                }
+            </div>
+        </div>
+
     </div>
 </section>
 
