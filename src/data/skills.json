@@ -154,12 +154,6 @@
   ],
   "cardsCurrent": [
     {
-      "name": "Magíster en Ciberseguridad",
-      "imagePath": "images/puce.png",
-      "alt": "puce",
-      "link": "https://www.pucesa.edu.ec/mci/"
-    },
-    {
       "name": "Análista de Ciberseguridad",
       "imagePath": "images/acad-ciber.png",
       "alt": "acad-ciber",
@@ -167,6 +161,12 @@
     }
   ],
   "cardsCulminate": [
+    {
+      "name": "Magíster en Ciberseguridad",
+      "imagePath": "images/puce.png",
+      "alt": "puce",
+      "link": "https://www.pucesa.edu.ec/mci/"
+    },
     {
       "name": "Ingeniería en Sistemas e Informática",
       "imagePath": "images/uniandes.png",
