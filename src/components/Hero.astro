@@ -30,7 +30,7 @@ import TryhackmeIcon from "../components/icons/tryhackme-icon.astro";
     <h1 class="title">Saludos Cordiales!<span>✌️</span></h1>
     <h2 class="title">Soy <span class="subtitle-name">Edison Mendoza</span></h2>
     <span class="title-job"
-      >Pentester | CTF Player | ECHA
+      >Marino IF | Pentester | CTF Player
     </span>
 
     <div class="bottom">
@@ -95,7 +95,1797 @@ import TryhackmeIcon from "../components/icons/tryhackme-icon.astro";
     </div>
   </div>
   <figure>
+    <img src="deed2```astro
+---
+import Badge from "../components/Badge.astro";
+import GithubIcon from "../components/icons/github-icon.astro";
+import LinkedinIcon from "../components/icons/linkedin-icon.astro";
+import AcademyCyberIcon from "../components/icons/academy_cyber-icon.astro";
+import CiscoBadgeIcon from "../components/icons/badge_creddly-icon.astro";
+import HMIcon from "../components/icons/badge_HM-icon.astro";
+import SendMailIcon from "../components/icons/send_mail-icon.astro";
+import SocialPill from "../components/icons/socialPill.astro";
+import CopyIcon from "./icons/copy-icon.astro";
+import TryHackMeIcon from "../components/icons/tryhackme-icon.astro";
+import LpiIcon from "../components/icons/lpi-icon.astro";
+import {
+  GITHUB_URL,
+  LINKEDIN_URL,
+  PUCE_URL,
+  BADGE_CISCO_URL,
+  ACAD_CIBER_BADGE_URL,
+  ACAD_HM_BADGE_URL,
+  EMAIL_URL,
+  TRYHACK_PROFILE_URL,
+  LPI01_CERT_URL,
+} from "../constants/urls.ts";
+
+---
+
+<section class="home" id="home">
+  <div class="main-title">
+    <h1 class="title">Saludos Cordiales!<span>✌️</span></h1>
+    <h2 class="title">Soy <span class="subtitle-name">Edison Mendoza</span></h2>
+    <span class="title-job">Pentester | CTF Player | ECHA</span>
+
+    <div class="bottom">
+      <a
+        class="btn"
+        href="https://drive.google.com/file/d/18KZtN_EAlqOtzxxgXU5OnFbpQ2mAKS5K/view?usp=sharing"
+        target="_blank"
+        onclick="window.open(this.href,'_blank'); return false;"
+      >
+        Ver Currículum
+      </a>
+      <div class="social">
+        <a target="_blank" href={LINKEDIN_URL} class="icon">
+          <LinkedinIcon height={42} width={42} />
+        </a>
+        <a target="_blank" href={GITHUB_URL} class="icon">
+          <GithubIcon height={40} width={40} />
+        </a>
+        <a target="_blank" href={TRYHACK_PROFILE_URL} class="icon">
+          <TryHackMeIcon height={45} width={45} />
+        </a>
+        <a target="_blank" href={ACAD_CIBER_BADGE_URL} class="icon">
+          <AcademyCyberIcon height={38} width={38} />
+        </a>
+      </div>
+    </div>
+    <div class="bottom">
+      <div class="social">
+        <a target="_blank" href={LPI01_CERT_URL} class="icon">
+          <LpiIcon height={33} width={33} />
+        </a>
+        <a target="_blank" href={BADGE_CISCO_URL} class="icon">
+          <CiscoBadgeIcon height={40} width={40} />
+        </a>
+        <a target="_blank" href={ACAD_HM_BADGE_URL} class="icon">
+          <HMIcon height={40} width={40} />
+        </a>
+      </div>
+    </div>
+    <div class="bottomail">
+      <SendMailIcon />
+      <SocialPill class="btn" href={`mailto:${EMAIL_URL}`}>
+        <Badge>eypclark@hotmail.com</Badge>
+      </SocialPill>
+      <div>
+        <button class="btn icon copy">
+          <CopyIcon width={28} height={28} />
+          <span class="copy-message" style="display: none;">¡copiado!</span>
+          <span class="button-text" >Copiar</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <figure>
     <img src="deed2.webp" alt="profile-image" class="profile" />
+  </figure>
+</section>
+
+<style>
+  section.home {
+    display: flex;
+    position: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh !important;
+    margin: 0;
+  }
+
+  .main-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.3rem;
+  }
+
+  .main-title .bottom {
+    margin-top: 1.2rem;
+    display: flex;
+
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+  }
+  .main-title .bottomail {
+    margin-top: 1.2rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .main-title .bottom .social {
+    display: flex;
+    justify-content: center;
+    gap: 0.8rem;
+  }
+
+  .main-title .bottom .social a {
+    text-decoration: none;
+    transition: 0.4s;
+    color: var(--secondary-color);
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main-title .bottom .social a:hover {
+    color: var(--primary-color);
+  }
+
+  h1.title,
+  h2.title {
+    font-weight: bold;
+    font-size: 64px;
+    cursor: default;
+    color: var(--font-color);
+  }
+
+  h2.title {
+    font-size: 60px;
+  }
+
+  h1.title span {
+    display: inline-block;
+    position: relative;
+    transition: 0.6s;
+  }
+
+  h1.title:hover > span {
+    animation: move 0.6s ease-in-out;
+  }
+
+  @keyframes move {
+    0% {
+      transform: translateX(0px);
+    }
+    25% {
+      transform: translateX(-7px);
+      rotate: -7deg;
+    }
+    50% {
+      transform: translateX(7px);
+      rotate: 7deg;
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  h2.title span.subtitle-name {
+    font-size: 64;
+    font-weight: bold;
+    color: var(--primary-color);
+  }
+
+  span.title-job {
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--font-color-2);
+  }
+
+  .home figure {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 30rem;
+    height: 28rem;
+  }
+
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 63% 37% 48% 52% / 60% 57% 43% 40%;
+    border: 3px solid var(--primary-color);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+    background: #3b82f6;
+  }
+
+  @media (max-width: 1024px) {
+    .home figure {
+      width: 28rem;
+      height: 23rem;
+    }
+  }
+
+  @media (max-width: 900px) {
+    .home figure {
+      width: 28rem;
+      height: 23rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    section.home {
+      flex-direction: column-reverse;
+      justify-content: center;
+      gap: 2rem;
+    }
+    .main-title {
+      text-align: center;
+    }
+    h1.title,
+    h2.title {
+      font-size: 52px;
+      margin: 0;
+    }
+    span.title-job {
+      font-size: 28px;
+    }
+    .home figure {
+      width: 18rem;
+      height: 18rem;
+    }
+    .main-title .bottom {
+      justify-content: center;
+    }
+    .main-title .bottommail {
+      justify-content: first baseline;
+    }
+    .buttons {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+    }
+    .buttons .icon {
+      position: relative;
+    }
+    .buttons .icon {
+      padding: 12px 16px;
+      border-radius: 0.5rem;
+      background-color: var(--bg-color-button-4);
+      color: var(--bg-color);
+      font-size: 1.2rem;
+      font-weight: 600;
+      transition: all 0.2s ease;
+      gap: 0.5rem;
+    }
+    .buttons .icon .copy-message {
+      position: flex;
+      top: 50%;
+      left: 50%;
+
+      display: none;
+      background-color: var(--bg-color-button);
+      border-radius: 0.5rem;
+      color: var(--font-color);
+      font-size: 14px;
+      padding: 4px 8px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    h1.title,
+    h2.title {
+      font-size: 42px;
+    }
+    span.title-job {
+      font-size: 28px;
+    }
+    .home figure {
+      width: 14rem;
+      height: 14rem;
+    }
+  }
+</style>
+
+<script>
+  const copyToClipboard = () => {
+    const```astro
+---
+import Badge from "../components/Badge.astro";
+import GithubIcon from "../components/icons/github-icon.astro";
+import LinkedinIcon from "../components/icons/linkedin-icon.astro";
+import AcademyCyberIcon from "../components/icons/academy_cyber-icon.astro";
+import CiscoBadgeIcon from "../components/icons/badge_creddly-icon.astro";
+import HMIcon from "../components/icons/badge_HM-icon.astro";
+import SendMailIcon from "../components/icons/send_mail-icon.astro";
+import SocialPill from "../components/icons/socialPill.astro";
+import CopyIcon from "./icons/copy-icon.astro";
+import TryHackMeIcon from "../components/icons/tryhackme-icon.astro";
+import LpiIcon from "../components/icons/lpi-icon.astro";
+import {
+  GITHUB_URL,
+  LINKEDIN_URL,
+  PUCE_URL,
+  BADGE_CISCO_URL,
+  ACAD_CIBER_BADGE_URL,
+  ACAD_HM_BADGE_URL,
+  EMAIL_URL,
+  TRYHACK_PROFILE_URL,
+  LPI01_CERT_URL,
+} from "../constants/urls.ts";
+
+<section class="home" id="home">
+  <div class="main-title">
+    <h1 class="title">Saludos Cordiales!<span>✌️</span></h1>
+    <h2 class="title">Soy <span class="subtitle-name">Edison Mendoza</span></h2>
+    <span class="title-job">Pentester | CTF Player | ECHA</span>
+
+    <div class="bottom">
+      <a
+        class="btn"
+        href="https://drive.google.com/file/d/18KZtN_EAlqOtzxxgXU5OnFbpQ2mAKS5K/view?usp=sharing"
+        target="_blank"
+        onclick="window.open(this.href,'_blank'); return false;"
+      >
+        Ver Currículum
+      </a>
+      <div class="social">
+        <a target="_blank" href={LINKEDIN_URL} class="icon">
+          <LinkedinIcon height={42} width={42} />
+        </a>
+        <a target="_blank" href={GITHUB_URL} class="icon">
+          <GithubIcon height={40} width={40} />
+        </a>
+        <a target="_blank" href={TRYHACK_PROFILE_URL} class="icon">
+          <TryHackMeIcon height={45} width={45} />
+        </a>
+        <a target="_blank" href={ACAD_CIBER_BADGE_URL} class="icon">
+          <AcademyCyberIcon height={38} width={38} />
+        </a>
+      </div>
+    </div>
+    <div class="bottom">
+      <div class="social">
+        <a target="_blank" href={LPI01_CERT_URL} class="icon">
+          <LpiIcon height={33} width={33} />
+        </a>
+        <a target="_blank" href={BADGE_CISCO_URL} class="icon">
+          <CiscoBadgeIcon height={40} width={40} />
+        </a>
+        <a target="_blank" href={ACAD_HM_BADGE_URL} class="icon">
+          <HMIcon height={40} width={40} />
+        </a>
+      </div>
+    </div>
+    <div class="bottomail">
+      <SendMailIcon />
+      <SocialPill class="btn" href={`mailto:${EMAIL_URL}`}>
+        <Badge>eypclark@hotmail.com</Badge>
+      </SocialPill>
+      <div>
+        <button class="btn icon copy">
+          <CopyIcon width={28} height={28} />
+          <span class="copy-message" style="display: none;">¡copiado!</span>
+          <span class="button-text">Copiar</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <figure>
+    <img src="deed2.webp" alt="profile-image" class="profile" />
+  </figure>
+</section>
+
+<style>
+  section.home {
+    display: flex;
+    position: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh !important;
+    margin: 0;
+  }
+
+  .main-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.3rem;
+  }
+
+  .main-title .bottom {
+    margin-top: 1.2rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+  }
+  .main-title .bottomail {
+    margin-top: 1.2rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .main-title .bottom .social {
+    display: flex;
+    justify-content: center;
+    gap: 0.8rem;
+  }
+
+  .main-title .bottom .social a {
+    text-decoration: none;
+    transition: 0.4s;
+    color: var(--secondary-color);
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main-title .bottom .social a:hover {
+    color: var(--primary-color);
+  }
+
+  h1.title,
+  h2.title {
+    font-weight: bold;
+    font-size: 64px;
+    cursor: default;
+    color: var(--font-color);
+  }
+
+  h2.title {
+    font-size: 60px;
+  }
+
+  h1.title span {
+    display: inline-block;
+    position: relative;
+    transition: 0.6s;
+  }
+
+  h1.title:hover > span {
+    animation: move 0.6s ease-in-out;
+  }
+
+  @keyframes move {
+    0% {
+      transform: translateX(0px);
+    }
+    25% {
+      transform: translateX(-7px);
+      rotate: -7deg;
+    }
+    50% {
+      transform: translateX(7px);
+      rotate: 7deg;
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  h2.title span.subtitle-name {
+    font-size: 64;
+    font-weight: bold;
+    color: var(--primary-color);
+  }
+
+  span.title-job {
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--font-color-2);
+  }
+
+  .home figure {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 30rem;
+    height: 28rem;
+  }
+
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 63% 37% 48% 52% / 60% 57% 43% 40%;
+    border: 3px solid var(--primary-color);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+    background: #3b82f6;
+  }
+
+  @media (max-width: 1024px) {
+    .home figure {
+      width: 28rem;
+      height: 23rem;
+    }
+  }
+
+  @media (max-width: 900px) {
+    .home figure {
+      width: 28rem;
+      height: 23rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    section.home {
+      flex-direction: column-reverse;
+      justify-content: center;
+      gap: 2rem;
+    }
+    .main-title {
+      text-align: center;
+    }
+    h1.title,
+    h2.title {
+      font-size: 52px;
+      margin: 0;
+    }
+    span.title-job {
+      font-size: 28px;
+    }
+    .home figure {
+      width: 18rem;
+      height: 18rem;
+    }
+    .main-title .bottom {
+      justify-content: center;
+    }
+    .main-title .bottommail {
+      justify-content: first baseline;
+    }
+    .buttons {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+    }
+    .buttons .icon {
+      position: relative;
+    }
+    .buttons .icon {
+      padding: 12px 16px;
+      border-radius: 0.5rem;
+      background-color: var(--bg-color-button-4);
+      color: var(--bg-color);
+      font-size: 1.2rem;
+      font-weight: 600;
+      transition: all 0.2s ease;
+      gap: 0.5rem;
+    }
+    .buttons .icon .copy-message {
+      position: flex;
+      top: 50%;
+      left: 50%;
+
+      display: none;
+      background-color: var(--bg-color-button);
+      border-radius: 0.5rem;
+      color: var(--font-color);
+      font-size: 14px;
+      padding: 4px 8px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    h1.title,
+    h2.title {
+      font-size: 42px;
+    }
+    span.title-job {
+      font-size: 28px;
+    }
+    .home figure {
+      width: 14rem;
+      height: 14rem;
+    }
+  }
+</style>
+
+<script>
+  const copyToClipboard = () => {
+    const emailUrl```astro
+---
+import Badge from "../components/Badge.astro";
+import GithubIcon from "../components/icons/github-icon.astro";
+import LinkedinIcon from "../components/icons/linkedin-icon.astro";
+import AcademyCyberIcon from "../components/icons/academy_cyber-icon.astro";
+import CiscoBadgeIcon from "../components/icons/badge_creddly-icon.astro";
+import HMIcon from "../components/icons/badge_HM-icon.astro";
+import SendMailIcon from "../components/icons/send_mail-icon.astro";
+import SocialPill from "../components/icons/socialPill.astro";
+import CopyIcon from "./icons/copy-icon.astro";
+import TryHackMeIcon from "../components/icons/tryhackme-icon.astro";
+import LpiIcon from "../components/icons/lpi-icon.astro";
+import {
+  GITHUB_URL,
+  LINKEDIN_URL,
+  PUCE_URL,
+  BADGE_CISCO_URL,
+  ACAD_CIBER_BADGE_URL,
+  ACAD_HM_BADGE_URL,
+  EMAIL_URL,
+  TRYHACK_PROFILE_URL,
+  LPI01_CERT_URL,
+} from "../constants/urls.ts";
+
+<section class="home" id="home">
+  <div class="main-title">
+    <h1 class="title">Saludos Cordiales!<span>✌️</span></h1>
+    <h2 class="title">Soy <span class="subtitle-name">Edison Mendoza</span></h2>
+    <span class="title-job">Pentester | CTF Player | ECHA</span>
+
+    <div class="bottom">
+      <a
+        class="btn"
+        href="https://drive.google.com/file/d/18KZtN_EAlqOtzxxgXU5OnFbpQ2mAKS5K/view?usp=sharing"
+        target="_blank"
+        onclick="window.open(this.href,'_blank'); return false;"
+      >
+        Ver Currículum
+      </a>
+      <div class="social">
+        <a target="_blank" href={LINKEDIN_URL} class="icon">
+          <LinkedinIcon height={42} width={42} />
+        </a>
+        <a target="_blank" href={GITHUB_URL} class="icon">
+          <GithubIcon height={40} width={40} />
+        </a>
+        <a target="_blank" href={TRYHACK_PROFILE_URL} class="icon">
+          <TryHackMeIcon height={45} width={45} />
+        </a>
+        <a target="_blank" href={ACAD_CIBER_BADGE_URL} class="icon">
+          <AcademyCyberIcon height={38} width={38} />
+        </a>
+      </div>
+    </div>
+    <div class="bottom">
+      <div class="social">
+        <a target="_blank" href={LPI01_CERT_URL} class="icon">
+          <LpiIcon height={33} width={33} />
+        </a>
+        <a target="_blank" href={BADGE_CISCO_URL} class="icon">
+          <CiscoBadgeIcon height={40} width={40} />
+        </a>
+        <a target="_blank" href={ACAD_HM_BADGE_URL} class="icon">
+          <HMIcon height={40} width={40} />
+        </a>
+      </div>
+    </div>
+    <div class="bottomail">
+      <SendMailIcon />
+      <SocialPill class="btn" href={`mailto:${EMAIL_URL}`}>
+        <Badge>eypclark@hotmail.com</Badge>
+      </SocialPill>
+      <button class="btn icon copy">
+        <CopyIcon width={28} height={28} />
+        <span class="copy-message" style="display: none;">¡copiado!</span>
+        <span class="button-text">Copiar</span>
+      </button>
+    </div>
+  </div>
+  <figure>
+    <img src="deed2.webp" alt="profile-image" class="profile" />
+  </figure>
+</section>
+
+<style>
+  section.home {
+    display: flex;
+    position: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh !important;
+    margin: 0;
+  }
+
+  .main-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.3rem;
+  }
+
+  .main-title .bottom {
+    margin-top: 1.2rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+  }
+  .main-title .bottomail {
+    margin-top: 1.2rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .main-title .bottom .social {
+    display: flex;
+    justify-content: center;
+    gap: 0.8rem;
+  }
+
+  .main-title .bottom .social a {
+    text-decoration: none;
+    transition: 0.4s;
+    color: var(--secondary-color);
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main-title .bottom .social a:hover {
+    color: var(--primary-color);
+  }
+
+  h1.title,
+  h2.title {
+    font-weight: bold;
+    font-size: 64px;
+    cursor: default;
+    color: var(--font-color);
+  }
+
+  h2.title {
+    font-size: 60px;
+  }
+
+  h1.title span {
+    display: inline-block;
+    position: relative;
+    transition: 0.6s;
+  }
+
+  h1.title:hover > span {
+    animation: move 0.6s ease-in-out;
+  }
+
+  @keyframes move {
+    0% {
+      transform: translateX(0px);
+    }
+    25% {
+      transform: translateX(-7px);
+      rotate: -7deg;
+    }
+    50% {
+      transform: translateX(7px);
+      rotate: 7deg;
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  h2.title span.subtitle-name {
+    font-size: 64;
+    font-weight: bold;
+    color: var(--primary-color);
+  }
+
+  span.title-job {
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--font-color-2);
+  }
+
+  .home figure {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 30rem;
+    height: 28rem;
+  }
+
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 63% 37% 48% 52% / 60% 57% 43% 40%;
+    border: 3px solid var(--primary-color);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+    background: #3b82f6;
+  }
+
+  @media (max-width: 1024px) {
+    .home figure {
+      width: 28rem;
+      height: 23rem;
+    }
+  }
+
+  @media (max-width: 900px) {
+    .home figure {
+      width: 28rem;
+      height: 23rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    section.home {
+      flex-direction: column-reverse;
+      justify-content: center;
+      gap: 2rem;
+    }
+    .main-title {
+      text-align: center;
+    }
+    h1.title,
+    h2.title {
+      font-size: 52px;
+      margin: 0;
+    }
+    span.title-job {
+      font-size: 28px;
+    }
+    .home figure {
+      width: 18rem;
+      height: 18rem;
+    }
+    .main-title .bottom {
+      justify-content: center;
+    }
+    .main-title .bottommail {
+      justify-content: first baseline;
+    }
+    .buttons {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+    }
+    .buttons .icon {
+      position: relative;
+    }
+    .buttons .icon {
+      padding: 12px 16px;
+      border-radius: 0.5rem;
+      background-color: var(--bg-color-button-4);
+      color: var(--bg-color);
+      font-size: 1.2rem;
+      font-weight: 600;
+      transition: all 0.2s ease;
+      gap: 0.5rem;
+    }
+    .buttons .icon .copy-message {
+      position: flex;
+      top: 50%;
+      left: 50%;
+
+      display: none;
+      background-color: var(--bg-color-button);
+      border-radius: 0.5rem;
+      color: var(--font-color);
+      font-size: 14px;
+      padding: 4px 8px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    h1.title,
+    h2.title {
+      font-size: 42px;
+    }
+    span.title-job {
+      font-size: 28px;
+    }
+    .home figure {
+      width: 14rem;
+      height: 14rem;
+    }
+  }
+</style>
+
+<script>
+  const copyToClipboard = () => {
+    const emailUrl = document.querySelector(".email span")?.```astro
+---
+import Badge from "../components/Badge.astro";
+import GithubIcon from "../components/icons/github-icon.astro";
+import LinkedinIcon from "../components/icons/linkedin-icon.astro";
+import AcademyCyberIcon from "../components/icons/academy_cyber-icon.astro";
+import CiscoBadgeIcon from "../components/icons/badge_creddly-icon.astro";
+import HMIcon from "../components/icons/badge_HM-icon.astro";
+import SendMailIcon from "../components/icons/send_mail-icon.astro";
+import SocialPill from "../components/icons/socialPill.astro";
+import CopyIcon from "./icons/copy-icon.astro";
+import TryHackMeIcon from "../components/icons/tryhackme-icon.astro";
+import LpiIcon from "../components/icons/lpi-icon.astro";
+import {
+  GITHUB_URL,
+  LINKEDIN_URL,
+  PUCE_URL,
+  BADGE_CISCO_URL,
+  ACAD_CIBER_BADGE_URL,
+  ACAD_HM_BADGE_URL,
+  EMAIL_URL,
+  TRYHACK_PROFILE_URL,
+  LPI01_CERT_URL,
+} from "../constants/urls.ts";
+
+<section class="home" id="home">
+  <div class="main-title">
+    <h1 class="title">Saludos Cordiales!<span>✌️</span></h1>
+    <h2 class="title">Soy <span class="subtitle-name">Edison Mendoza</span></h2>
+    <span class="title-job">Pentester | CTF Player | ECHA</span>
+
+    <div class="bottom">
+      <a
+        class="btn"
+        href="https://drive.google.com/file/d/18KZtN_EAlqOtzxxgXU5OnFbpQ2mAKS5K/view?usp=sharing"
+        target="_blank"
+        onclick="window.open(this.href,'_blank'); return false;"
+      >
+        Ver Currículum
+      </a>
+      <div class="social">
+        <a target="_blank" href={LINKEDIN_URL} class="icon">
+          <LinkedinIcon height={42} width={42} />
+        </a>
+        <a target="_blank" href={GITHUB_URL} class="icon">
+          <GithubIcon height={40} width={40} />
+        </a>
+        <a target="_blank" href={TRYHACK_PROFILE_URL} class="icon">
+          <TryHackMeIcon height={45} width={45} />
+        </a>
+        <a target="_blank" href={ACAD_CIBER_BADGE_URL} class="icon">
+          <AcademyCyberIcon height={38} width={38} />
+        </a>
+      </div>
+    </div>
+    <div class="bottom">
+      <div class="social">
+        <a target="_blank" href={LPI01_CERT_URL} class="icon">
+          <LpiIcon height={33} width={33} />
+        </a>
+        <a target="_blank" href={BADGE_CISCO_URL} class="icon">
+          <CiscoBadgeIcon height={40} width={40} />
+        </a>
+        <a target="_blank" href={ACAD_HM_BADGE_URL} class="icon">
+          <HMIcon height={40} width={40} />
+        </a>
+      </div>
+    </div>
+    <div class="bottomail">
+      <SendMailIcon />
+      <SocialPill class="btn" href={`mailto:${EMAIL_URL}`}>
+        <Badge>eypclark@hotmail.com</Badge>
+      </SocialPill>
+      <div>
+        <button class="btn icon copy">
+          <CopyIcon width={28} height={28} />
+          <span class="copy-message" style="display: none;">¡copiado!</span>
+          <span class="button-text" >Copiar</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <figure>
+    <img src="deed2.webp" alt="profile-image" class="profile" />
+  </figure>
+</section>
+
+<style>
+  section.home {
+    display: flex;
+    position: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh !important;
+    margin: 0;
+  }
+
+  .main-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.3rem;
+  }
+
+  .main-title .bottom {
+    margin-top: 1.2rem;
+    display: flex;
+
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+  }
+  .main-title .bottomail {
+    margin-top: 1.2rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .main-title .bottom .social {
+    display: flex;
+    justify-content: center;
+    gap: 0.8rem;
+  }
+
+  .main-title .bottom .social a {
+    text-decoration: none;
+    transition: 0.4s;
+    color: var(--secondary-color);
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main-title .bottom .social a:hover {
+    color: var(--primary-color);
+  }
+
+  h1.title,
+  h2.title {
+    font-weight: bold;
+    font-size: 64px;
+    cursor: default;
+    color: var(--font-color);
+  }
+
+  h2.title {
+    font-size: 60px;
+  }
+
+  h1.title span {
+    display: inline-block;
+    position: relative;
+    transition: 0.6s;
+  }
+
+  h1.title:hover > span {
+    animation: move 0.6s ease-in-out;
+  }
+
+  @keyframes move {
+    0% {
+      transform: translateX(0px);
+    }
+    25% {
+      transform: translateX(-7px);
+      rotate: -7deg;
+    }
+    50% {
+      transform: translateX(7px);
+      rotate: 7deg;
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  h2.title span.subtitle-name {
+    font-size: 64;
+    font-weight: bold;
+    color: var(--primary-color);
+  }
+
+  span.title-job {
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--font-color-2);
+  }
+
+  .home figure {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 30rem;
+    height: 28rem;
+  }
+
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 63% 37% 48% 52% / 60% 57% 43% 40%;
+    border: 3px solid var(--primary-color);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+    background: #3b82f6;
+  }
+
+  @media (max-width: 1024px) {
+    .home figure {
+      width: 28rem;
+      height: 23rem;
+    }
+  }
+
+  @media (max-width: 900px) {
+    .home figure {
+      width: 28rem;
+      height: 23rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    section.home {
+      flex-direction: column-reverse;
+      justify-content: center;
+      gap: 2rem;
+    }
+    .main-title {
+      text-align: center;
+    }
+    h1.title,
+    h2.title {
+      font-size: 52px;
+      margin: 0;
+    }
+    span.title-job {
+      font-size: 28px;
+    }
+    .home figure {
+      width: 18rem;
+      height: 18rem;
+    }
+    .main-title .bottom {
+      justify-content: center;
+    }
+    .main-title .bottommail {
+      justify-content: first baseline;
+    }
+    .buttons {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+    }
+    .buttons .icon {
+      position: relative;
+    }
+    .buttons .icon {
+      padding: 12px 16px;
+      border-radius: 0.5rem;
+      background-color: var(--bg-color-button-4);
+      color: var(--bg-color);
+      font-size: 1.2rem;
+      font-weight: 600;
+      transition: all 0.2s ease;
+      gap: 0.5rem;
+    }
+    .buttons .icon .copy-message {
+      position: flex;
+      top: 50%;
+      left: 50%;
+
+      display: none;
+      background-color: var(--bg-color-button);
+      border-radius: 0.5rem;
+      color: var(--font-color);
+      font-size: 14px;
+      padding: 4px 8px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    h1.title,
+    h2.title {
+      font-size: 42px;
+    }
+    span.title-job {
+      font-size: 28px;
+    }
+    .home figure {
+      width: 14rem;
+      height: 14rem;
+    }
+  }
+</style>
+
+<script>
+  const copyToClipboard = () => {
+    const email```astro
+---
+import Badge from "../components/Badge.astro";
+import GithubIcon from "../components/icons/github-icon.astro";
+import LinkedinIcon from "../components/icons/linkedin-icon.astro";
+import AcademyCyberIcon from "../components/icons/academy_cyber-icon.astro";
+import CiscoBadgeIcon from "../components/icons/badge_creddly-icon.astro";
+import HMIcon from "../components/icons/badge_HM-icon.astro";
+import SendMailIcon from "../components/icons/send_mail-icon.astro";
+import SocialPill from "../components/icons/socialPill.astro";
+import CopyIcon from "./icons/copy-icon.astro";
+import TryHackMeIcon from "../components/icons/tryhackme-icon.astro";
+import LpiIcon from "../components/icons/lpi-icon.astro";
+import {
+  GITHUB_URL,
+  LINKEDIN_URL,
+  PUCE_URL,
+  BADGE_CISCO_URL,
+  ACAD_CIBER_BADGE_URL,
+  ACAD_HM_BADGE_URL,
+  EMAIL_URL,
+  TRYHACK_PROFILE_URL,
+  LPI01_CERT_URL,
+} from "../constants/urls.ts";
+
+<section class="home" id="home">
+  <div class="main-title">
+    <h1 class="title">Saludos Cordiales!<span>✌️</span></h1>
+    <h2 class="title">Soy <span class="subtitle-name">Edison Mendoza</span></h2>
+    <span class="title-job">Pentester | CTF Player | ECHA</span>
+
+    <div class="bottom">
+      <a
+        class="btn"
+        href="https://drive.google.com/file/d/18KZtN_EAlqOtzxxgXU5OnFbpQ2mAKS5K/view?usp=sharing"
+        target="_blank"
+        onclick="window.open(this.href,'_blank'); return false;"
+      >
+        Ver Currículum
+      </a>
+      <div class="social">
+        <a target="_blank" href={LINKEDIN_URL} class="icon">
+          <LinkedinIcon height={42} width={42} />
+        </a>
+        <a target="_blank" href={GITHUB_URL} class="icon">
+          <GithubIcon height={40} width={40} />
+        </a>
+        <a target="_blank" href={TRYHACK_PROFILE_URL} class="icon">
+          <TryHackMeIcon height={45} width={45} />
+        </a>
+        <a target="_blank" href={ACAD_CIBER_BADGE_URL} class="icon">
+          <AcademyCyberIcon height={38} width={38} />
+        </a>
+      </div>
+    </div>
+    <div class="bottom">
+      <div class="social">
+        <a target="_blank" href={LPI01_CERT_URL} class="icon">
+          <LpiIcon height={33} width={33} />
+        </a>
+        <a target="_blank" href={BADGE_CISCO_URL} class="icon">
+          <CiscoBadgeIcon height={40} width={40} />
+        </a>
+        <a target="_blank" href={ACAD_HM_BADGE_URL} class="icon">
+          <HMIcon height={40} width={40} />
+        </a>
+      </div>
+    </div>
+    <div class="bottomail">
+      <SendMailIcon />
+      <SocialPill class="btn" href={`mailto:${EMAIL_URL}`}>
+        <Badge>eypclark@hotmail.com</Badge>
+      </SocialPill>
+      <div>
+        <button class="btn icon copy">
+          <CopyIcon width={28} height={28} />
+          <span class="copy-message" style="display: none;">¡copiado!</span>
+          <span class="button-text">Copiar</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <figure>
+    <img src="deed2.webp" alt="profile-image" class="profile" />
+  </figure>
+</section>
+
+<style>
+  section.home {
+    display: flex;
+    position: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh !important;
+    margin: 0;
+  }
+
+  .main-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.3rem;
+  }
+
+  .main-title .bottom {
+    margin-top: 1.2rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+  }
+  .main-title .bottomail {
+    margin-top: 1.2rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .main-title .bottom .social {
+    display: flex;
+    justify-content: center;
+    gap: 0.8rem;
+  }
+
+  .main-title .bottom .social a {
+    text-decoration: none;
+    transition: 0.4s;
+    color: var(--secondary-color);
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main-title .bottom .social a:hover {
+    color: var(--primary-color);
+  }
+
+  h1.title,
+  h2.title {
+    font-weight: bold;
+    font-size: 64px;
+    cursor: default;
+    color: var(--font-color);
+  }
+
+  h2.title {
+    font-size: 60px;
+  }
+
+  h1.title span {
+    display: inline-block;
+    position: relative;
+    transition: 0.6s;
+  }
+
+  h1.title:hover > span {
+    animation: move 0.6s ease-in-out;
+  }
+
+  @keyframes move {
+    0% {
+      transform: translateX(0px);
+    }
+    25% {
+      transform: translateX(-7px);
+      rotate: -7deg;
+    }
+    50% {
+      transform: translateX(7px);
+      rotate: 7deg;
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  h2.title span.subtitle-name {
+    font-size: 64;
+    font-weight: bold;
+    color: var(--primary-color);
+  }
+
+  span.title-job {
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--font-color-2);
+  }
+
+  .home figure {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 30rem;
+    height: 28rem;
+  }
+
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 63% 37% 48% 52% / 60% 57% 43% 40%;
+    border: 3px solid var(--primary-color);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+    background: #3b82f6;
+  }
+
+  @media (max-width: 1024px) {
+    .home figure {
+      width: 28rem;
+      height: 23rem;
+    }
+  }
+
+  @media (max-width: 900px) {
+    .home figure {
+      width: 28rem;
+      height: 23rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    section.home {
+      flex-direction: column-reverse;
+      justify-content: center;
+      gap: 2rem;
+    }
+    .main-title {
+      text-align: center;
+    }
+    h1.title,
+    h2.title {
+      font-size: 52px;
+      margin: 0;
+    }
+    span.title-job {
+      font-size: 28px;
+    }
+    .home figure {
+      width: 18rem;
+      height: 18rem;
+    }
+    .main-title .bottom {
+      justify-content: center;
+    }
+    .main-title .bottommail {
+      justify-content: first baseline;
+    }
+    .buttons {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+    }
+    .buttons .icon {
+      position: relative;
+    }
+    .buttons .icon {
+      padding: 12px 16px;
+      border-radius: 0.5rem;
+      background-color: var(--bg-color-button-4);
+      color: var(--bg-color);
+      font-size: 1.2rem;
+      font-weight: 600;
+      transition: all 0.2s ease;
+      gap: 0.5rem;
+    }
+    .buttons .icon .copy-message {
+      position: flex;
+      top: 50%;
+      left: 50%;
+
+      display: none;
+      background-color: var(--bg-color-button);
+      border-radius: 0.5rem;
+      color: var(--font-color);
+      font-size: 14px;
+      padding: 4px 8px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    h1.title,
+    h2.title {
+      font-size: 42px;
+    }
+    span.title-job {
+      font-size: 28px;
+    }
+    .home figure {
+      width: 14rem;
+      height: 14rem;
+    }
+  }
+</style>
+
+<script>
+  const copyToClipboard = () => {
+    const emailUrl```astro
+---
+import Badge from "../components/Badge.astro";
+import GithubIcon from "../components/icons/github-icon.astro";
+import LinkedinIcon from "../components/icons/linkedin-icon.astro";
+import AcademyCyberIcon from "../components/icons/academy_cyber-icon.astro";
+import CiscoBadgeIcon from "../components/icons/badge_creddly-icon.astro";
+import HMIcon from "../components/icons/badge_HM-icon.astro";
+import SendMailIcon from "../components/icons/send_mail-icon.astro";
+import SocialPill from "../components/icons/socialPill.astro";
+import CopyIcon from "./icons/copy-icon.astro";
+import TryHackMeIcon from "../components/icons/tryhackme-icon.astro";
+import LpiIcon from "../components/icons/lpi-icon.astro";
+import {
+  GITHUB_URL,
+  LINKEDIN_URL,
+  PUCE_URL,
+  BADGE_CISCO_URL,
+  ACAD_CIBER_BADGE_URL,
+  ACAD_HM_BADGE_URL,
+  EMAIL_URL,
+  TRYHACK_PROFILE_URL,
+  LPI01_CERT_URL,
+} from "../constants/urls.ts";
+
+<section class="home" id="home">
+  <div class="main-title">
+    <h1 class="title">Saludos Cordiales!<span>✌️</span></h1>
+    <h2 class="title">Soy <span class="subtitle-name">Edison Mendoza</span></h2>
+    <span class="title-job">Pentester | CTF Player | ECHA</span>
+
+    <div class="bottom">
+      <a
+        class="btn"
+        href="https://drive.google.com/file/d/18KZtN_EAlqOtzxxgXU5OnFbpQ2mAKS5K/view?usp=sharing"
+        target="_blank"
+        onclick="window.open(this.href,'_blank'); return false;"
+      >
+        Ver Currículum
+      </a>
+      <div class="social">
+        <a target="_blank" href={LINKEDIN_URL} class="icon">
+          <LinkedinIcon height={42} width={42} />
+        </a>
+        <a target="_blank" href={GITHUB_URL} class="icon">
+          <GithubIcon height={40} width={40} />
+        </a>
+        <a target="_blank" href={TRYHACK_PROFILE_URL} class="icon">
+          <TryHackMeIcon height={45} width={45} />
+        </a>
+        <a target="_blank" href={ACAD_CIBER_BADGE_URL} class="icon">
+          <AcademyCyberIcon height={38} width={38} />
+        </a>
+      </div>
+    </div>
+    <div class="bottom">
+      <div class="social">
+        <a target="_blank" href={LPI01_CERT_URL} class="icon">
+          <LpiIcon height={33} width={33} />
+        </a>
+        <a target="_blank" href={BADGE_CISCO_URL} class="icon">
+          <CiscoBadgeIcon height={40} width={40} />
+        </a>
+        <a target="_blank" href={ACAD_HM_BADGE_URL} class="icon">
+          <HMIcon height={40} width={40} />
+        </a>
+      </div>
+    </div>
+    <div class="bottomail">
+      <SendMailIcon />
+      <SocialPill class="btn" href={`mailto:${EMAIL_URL}`}>
+        <Badge>eypclark@hotmail.com</Badge>
+      </SocialPill>
+      <div>
+        <button class="btn icon copy">
+          <CopyIcon width={28} height={28} />
+          <span class="copy-message" style="display: none;">¡copiado!</span>
+          <span class="button-text">Copiar</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <figure>
+    <img src="deed2.webp" alt="profile-image" class="profile" />
+  </figure>
+</section>
+
+<style>
+  section.home {
+    display: flex;
+    position: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh !important;
+    margin: 0;
+  }
+
+  .main-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.3rem;
+  }
+
+  .main-title .bottom {
+    margin-top: 1.2rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+  }
+  .main-title .bottomail {
+    margin-top: 1.2rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .main-title .bottom .social {
+    display: flex;
+    justify-content: center;
+    gap: 0.8rem;
+  }
+
+  .main-title .bottom .social a {
+    text-decoration: none;
+    transition: 0.4s;
+    color: var(--secondary-color);
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main-title .bottom .social a:hover {
+    color: var(--primary-color);
+  }
+
+  h1.title,
+  h2.title {
+    font-weight: bold;
+    font-size: 64px;
+    cursor: default;
+    color: var(--font-color);
+  }
+
+  h2.title {
+    font-size: 60px;
+  }
+
+  h1.title span {
+    display: inline-block;
+    position: relative;
+    transition: 0.6s;
+  }
+
+  h1.title:hover > span {
+    animation: move 0.6s ease-in-out;
+  }
+
+  @keyframes move {
+    0% {
+      transform: translateX(0px);
+    }
+    25% {
+      transform: translateX(-7px);
+      rotate: -7deg;
+    }
+    50% {
+      transform: translateX(7px);
+      rotate: 7deg;
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  h2.title span.subtitle-name {
+    font-size: 64;
+    font-weight: bold;
+    color: var(--primary-color);
+  }
+
+  span.title-job {
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--font-color-2);
+  }
+
+  .home figure {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 30rem;
+    height: 28rem;
+  }
+
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 63% 37% 48% 52% / 60% 57% 43% 40%;
+    border: 3px solid var(--primary-color);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+    background: #3b82f6;
+  }
+
+  @media (max-width: 1024px) {
+    .home figure {
+      width: 28rem;
+      height: 23rem;
+    }
+  }
+
+  @media (max-width: 900px) {
+    .home figure {
+      width: 28rem;
+      height: 23rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    section.home {
+      flex-direction: column-reverse;
+      justify-content: center;
+      gap: 2rem;
+    }
+    .main-title {
+      text-align: center;
+    }
+    h1.title,
+    h2.title {
+      font-size: 52px;
+      margin: 0;
+    }
+    span.title-job {
+      font-size: 28px;
+    }
+    .home figure {
+      width: 18rem;
+      height: 18rem;
+    }
+    .main-title .bottom {
+      justify-content: center;
+    }
+    .main-title .bottommail {
+      justify-content: first baseline;
+    }
+    .buttons {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+    }
+    .buttons .icon {
+      position: relative;
+    }
+    .buttons .icon {
+      padding: 12px 16px;
+      border-radius: 0.5rem;
+      background-color: var(--bg-color-button-4);
+      color: var(--bg-color);
+      font-size: 1.2rem;
+      font-weight: 600;
+      transition: all 0.2s ease;
+      gap: 0.5rem;
+    }
+    .buttons .icon .copy-message {
+      position: flex;
+      top: 50%;
+      left: 50%;
+
+      display: none;
+      background-color: var(--bg-color-button);
+      border-radius: 0.5rem;
+      color: var(--font-color);
+      font-size: 14px;
+      padding: 4px 8px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    h1.title,
+    h2.title {
+      font-size: 42px;
+    }
+    span.title-job {
+      font-size: 28px;
+    }
+    .home figure {
+      width: 14rem;
+      height: 14rem;
+    }
+  }
+</style>
+
+<script>
+  const copyToClipboard = () => {
+    const emailUrl.webp" alt="profile-image" class="profile" />
   </figure>
 </section>
 
